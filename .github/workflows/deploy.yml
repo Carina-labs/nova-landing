@@ -2,7 +2,7 @@ name: 'publish'
 
 on:
   push:
-    branches: [main, cicd]
+    branches: [release, test, cicd]
 
 jobs:
   build-and-deploy:
