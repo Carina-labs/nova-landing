@@ -1,45 +1,19 @@
-import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
-import { ServerStyleSheets } from '@mui/styles'
-
-export default class MyDocument extends Document {
+export default class CustomDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          {/* // 모든페이지에 아래 메타테크가 head에 들어감 // 루트파일이기에 가능한
+          적은 코드만 넣어야함 전역 파일을 엉망으로 만들면 안된다 // 웹 타이틀,
+          ga 같은것 넣음 */}
+          <meta property="custom" content="123123" />
+        </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
     )
-  }
-}
-
-MyDocument.getInitialProps = async (ctx) => {
-  const sheet = new ServerStyleSheet()
-  const materialSheets = new ServerStyleSheets()
-  const originalRenderPage = ctx.renderPage
-
-  try {
-    ctx.renderPage = () =>
-      originalRenderPage({
-        enhanceApp: (App) => (props) =>
-          sheet.collectStyles(materialSheets.collect(<App {...props} />)),
-      })
-
-    const initialProps = await Document.getInitialProps(ctx)
-    return {
-      ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          {sheet.getStyleElement()}
-        </>
-      ),
-    }
-  } finally {
-    sheet.seal()
   }
 }

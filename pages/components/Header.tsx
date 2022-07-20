@@ -1,13 +1,9 @@
-import { Button } from '@mui/material'
 import React from 'react'
 
 export const Header = () => {
   return (
     <div>
-      <Button>Testing</Button>
-      <div className="underline">
-        <h1>Tailwind</h1>
-      </div>
+      <h1 className="text-3xl font-bold ">Hello world!</h1>
     </div>
   )
 }
