@@ -3,6 +3,8 @@ name: 'publish'
 on:
   push:
     branches: [release, test, cicd]
+    tags:
+      - '*'
 
 jobs:
   build-and-deploy:
