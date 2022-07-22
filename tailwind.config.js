@@ -7,6 +7,13 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '830px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     borderRadius: {
       15: '15px',
       100: '100px',
@@ -25,23 +32,21 @@ module.exports = {
       23: '1.438rem',
       24: '1.5rem',
       34: '2.125rem',
+      48: '3.5rem',
     },
     colors: {
       'tw-black': colors.black,
       'tw-white': colors.white,
       'tw-gray': colors.slate,
       'tw-green': colors.emerald,
-      'tw-purple': colors.violet,
+      'tw-purple': colors.purple,
       'tw-yellow': colors.amber,
       'tw-pink': colors.fuchsia,
       blue: {
         default: '#3838F4',
         light: '#7474F7',
       },
-      purple: {
-        default: '#B6B6FB',
-        light: '#E1E1FE',
-      },
+      purple: '#7474F7',
       yellow: {
         default: '#E6FF67',
         light: '#F8FED8',

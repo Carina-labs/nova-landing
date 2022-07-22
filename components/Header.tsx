@@ -17,7 +17,7 @@ export const Header = () => {
     <Disclosure as="nav" className="bg-tw-black">
       {({ open }) => (
         <>
-          <div className="max-w-4xl mx-auto px-2 md:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto px-2 md:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-24">
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button */}

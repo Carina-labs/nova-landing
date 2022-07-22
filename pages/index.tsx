@@ -1,4 +1,7 @@
+import { Background } from 'components/Background'
+import { Stats } from 'components/Stats'
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import { Audits } from '../components/Audits'
 import { Ecosystem } from '../components/Ecosystem'
 import { Footer } from '../components/Footer'
@@ -9,15 +12,18 @@ import { Work } from '../components/Work'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Header />
+
       <Hero />
+      <Stats />
       <Work />
       <Ecosystem />
       <Audits />
       <Partners />
+
       <Footer />
-    </div>
+    </>
   )
 }
 
