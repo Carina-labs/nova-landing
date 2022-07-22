@@ -1,5 +1,41 @@
+import { ChatIcon } from '@heroicons/react/outline'
 import React from 'react'
+import tw from 'tailwind-styled-components'
 
 export const Hero = () => {
-  return <div></div>
+  return (
+    <div className="relative bg-tw-black overflow-hidden">
+      <div className="max-w-5xl mx-auto">
+        <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+            <div className="sm:text-center lg:text-left">
+              <h1 className="tracking-tight font-bold sm:text-5xl md:text-6xl text-48">
+                <span className="text-tw-white block xl:inline">
+                  Ultimate money lego
+                </span>{' '}
+                <span className="text-tw-white block xl:inline">
+                  for staked assets
+                </span>
+              </h1>
+              <p className="text-tw-white mt-3 pb-10 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                <span className="block">
+                  Supernova will enable liquid staking on Cosmos through
+                </span>
+                <span className="block">
+                  a combination of ICA, proprietary module and IBC query
+                </span>
+              </p>
+              <div className="mt-12 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div className="bg-purple rounded-md mt-3 sm:mt-0 sm:ml-3">
+                  <button className="text-tw-white w-full flex items-center justify-center px-8 py-3 text-base font-bold rounded-md hover:text-tw-black hover:bg-yellow-default  md:py-4 md:text-lg md:px-10">
+                    Follow for Updates
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  )
 }
