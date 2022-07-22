@@ -1,7 +1,6 @@
 import { Disclosure } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { classNames } from 'utils/className'
-
 import { LogoIcon } from './icons/LogoIcon'
 
 const navigation = [

@@ -52,7 +52,7 @@ export const Work = () => {
 
         {/* 02 Staked Swap */}
         <div className="lg:mx-auto lg:max-w-7xl lg:px-36 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-24 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-20 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
             <div>
               <div>
                 <span className="h-6 w-6 rounded-md flex items-center justify-center">
@@ -82,7 +82,7 @@ export const Work = () => {
               </div>
             </div>
           </div>
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-24 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-20 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
             <div className="border-2 border-yellow-default bg-tw-black rounded-md w-full h-full">
               <img src="../../assets/icon-02.svg" />
             </div>
@@ -91,7 +91,7 @@ export const Work = () => {
 
         {/* 03 Governance */}
         <div className="lg:mx-auto lg:max-w-7xl lg:px-36 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-24 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-20 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
             <div>
               <div>
                 <span className="h-6 w-6 rounded-md flex items-center justify-center">
@@ -118,7 +118,7 @@ export const Work = () => {
               </div>
             </div>
           </div>
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-24 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-20 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
             <div className="border-2 border-yellow-default bg-tw-black rounded-md w-full h-full">
               <img src="../../assets/icon-03.svg" />
             </div>
