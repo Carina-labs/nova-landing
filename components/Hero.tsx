@@ -1,11 +1,21 @@
 import { ChatIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
 import React from 'react'
 import tw from 'tailwind-styled-components'
+import { Stats } from './Stats'
 
 export const Hero = () => {
   return (
-    <div className="relative bg-tw-black overflow-hidden">
+    <div className="relative overflow-hidden">
       <div className="max-w-5xl mx-auto">
+        <Image
+          className="z-0 h-auto"
+          src="/assets/BG_Landiing1.png"
+          alt="bg1"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
@@ -26,7 +36,7 @@ export const Hero = () => {
                 </span>
               </p>
               <div className="mt-12 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="bg-purple rounded-md mt-3 sm:mt-0 sm:ml-3">
+                <div className="bg-blue rounded-md mt-3 sm:mt-0 sm:ml-3">
                   <button className="text-tw-white w-full flex items-center justify-center px-8 py-3 text-base font-bold rounded-md hover:text-tw-black hover:bg-yellow-default  md:py-4 md:text-lg md:px-10">
                     Follow for Updates
                   </button>
@@ -35,6 +45,7 @@ export const Hero = () => {
             </div>
           </main>
         </div>
+        <Stats />
       </div>
     </div>
   )

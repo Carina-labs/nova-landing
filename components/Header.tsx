@@ -13,7 +13,7 @@ const navigation = [
 
 export const Header = () => {
   return (
-    <Disclosure as="nav" className="bg-tw-black">
+    <Disclosure as="nav" className="relative z-10 bg-tw-black">
       {({ open }) => (
         <>
           <div className="max-w-5xl mx-auto px-2 md:px-6 lg:px-8">
