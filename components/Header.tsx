@@ -30,7 +30,7 @@ export const Header = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
-                <div className="flex-shrink-0 flex items-center mr-20">
+                <div className="flex-shrink-0 flex items-center mr-36">
                   <LogoIcon />
                 </div>
                 <div className="hidden md:block md:ml-6">

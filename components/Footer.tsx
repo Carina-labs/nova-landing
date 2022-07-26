@@ -3,88 +3,90 @@ import { LogoIcon } from './icons/LogoIcon'
 
 export const Footer = () => {
   return (
-    <footer className="bg-tw-black" aria-labelledby="footer-heading">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-2 xl:gap-8">
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-3">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <div className="space-y-8 xl:col-span-1">
-                  <LogoIcon />
-                  <div className="flex space-x-6">
-                    {navigation.social.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="text-tw-white hover:text-gray-500"
-                      >
-                        <span className="sr-only">{item.name}</span>
-                        <item.icon className="h-6 w-6" aria-hidden="true" />
-                      </a>
-                    ))}
+    <footer className=" bg-tw-black" aria-labelledby="footer-heading">
+      <div className="w-4/5 m-auto border-t-1 border-yellow-default">
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+          <div className="xl:grid xl:grid-cols-2 xl:gap-8">
+            <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-3">
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <div className="space-y-8 xl:col-span-1">
+                    <LogoIcon />
+                    <div className="flex space-x-6">
+                      {navigation.social.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className="text-tw-white hover:text-gray-500"
+                        >
+                          <span className="sr-only">{item.name}</span>
+                          <item.icon className="h-6 w-6" aria-hidden="true" />
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-yellow-default tracking-wider uppercase">
+                    Technology
+                  </h3>
+                  <ul role="list" className="mt-4 space-y-4">
+                    {navigation.technology.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-base text-tw-white hover:text-gray-900"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h3 className="text-sm font-semibold text-yellow-default tracking-wider uppercase">
-                  Technology
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.technology.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-tw-white hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-yellow-default tracking-wider uppercase">
-                  Community
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.community.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-tw-white hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-yellow-default tracking-wider uppercase">
-                  More
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.more.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-tw-white hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div className="mt-12 md:mt-0">
+                  <h3 className="text-sm font-semibold text-yellow-default tracking-wider uppercase">
+                    Community
+                  </h3>
+                  <ul role="list" className="mt-4 space-y-4">
+                    {navigation.community.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-base text-tw-white hover:text-gray-900"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-yellow-default tracking-wider uppercase">
+                    More
+                  </h3>
+                  <ul role="list" className="mt-4 space-y-4">
+                    {navigation.more.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-base text-tw-white hover:text-gray-900"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-tw-white xl:text-center">
-            &copy; 2022 a4x, Inc. All rights reserved.
-          </p>
+          <div className="mt-12 border-t border-gray-200 pt-8">
+            <p className="text-base text-tw-white xl:text-center">
+              &copy; 2022 a4x, Inc. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

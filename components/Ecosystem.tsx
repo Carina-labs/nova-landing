@@ -21,7 +21,7 @@ const stats = [
 
 export const Ecosystem = () => {
   return (
-    <div className="relative pt-16 pb-32 overflow-hidden">
+    <div className="relative pt-16 pb-12 overflow-hidden">
       <h1 className="text-tw-white text-34 font-extrabold text-center tracking-tight mb-8">
         Supernova Ecosystem
       </h1>
