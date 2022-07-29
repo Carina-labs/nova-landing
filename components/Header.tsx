@@ -20,7 +20,7 @@ export const Header = () => {
             <div className="mx-auto lg:mx-0 lg:flex items-center">
               <LogoIcon />
             </div>
-            <div className="block">
+            {/* <div className="block">
               <div className="hidden space-x-3 lg:flex ">
                 {navigation.map((item) => (
                   <a
@@ -41,7 +41,7 @@ export const Header = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </>

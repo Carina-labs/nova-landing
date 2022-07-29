@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export const Hero = () => {
   useEffect(() => {
@@ -7,8 +7,6 @@ export const Hero = () => {
       entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-fadeInDtoU')
-        } else {
-          entry.target.classList.remove('animate-fadeInDtoU')
         }
       })
     }
@@ -45,7 +43,7 @@ export const Hero = () => {
               <div className="bg-blue-default hover:bg-purple mt-3 rounded-2xl">
                 <Link href="https://twitter.com/Supernovazone">
                   <a target="_blank">
-                    <button className="text-tw-white w-full flex items-center justify-center font-bold py-3 text-12 sm:px-10 md:py-4 md:text-lg md:px-12 2xl:text-24">
+                    <button className="text-tw-white w-full flex items-center justify-center font-bold py-3 text-12 sm:px-10 md:py-4 md:text-16 md:px-12 2xl:text-24">
                       Follow for Updates
                     </button>
                   </a>

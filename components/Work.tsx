@@ -1,6 +1,6 @@
 import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { WorksLi } from './common/WorksLi'
 
 export const Work = () => {
@@ -9,8 +9,6 @@ export const Work = () => {
       entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-fadeInLtoR')
-        } else {
-          entry.target.classList.remove('animate-fadeInLtoR')
         }
       })
     }
@@ -18,8 +16,6 @@ export const Work = () => {
       entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-fadeInRtoL')
-        } else {
-          entry.target.classList.remove('animate-fadeInRtoL')
         }
       })
     }
@@ -47,7 +43,7 @@ export const Work = () => {
           <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 lg:flex">
             <div
               id="left"
-              className="w-1/2 lg:w-[450px] text-center mx-auto py-6"
+              className="animate-fadeInLtoR w-1/2 lg:w-[450px] text-center mx-auto py-6"
             >
               <Image
                 className="rounded-2xl"

@@ -4,79 +4,69 @@ import { LogoIcon } from './icons/LogoIcon'
 export const Footer = () => {
   return (
     <footer
-      className="mx-28 md:pt-100 xl:mx-44 2xl:mx-100 3xl:mx-120  relative z-20 "
+      className="mx-28 md:pt-100 xl:mx-44 2xl:mx-100 3xl:mx-120 relative z-20 "
       aria-labelledby="footer-heading"
     >
-      <div className="w-full py-12">
-        <div className="ml-28 xl:grid xl:grid-cols-2 xl:gap-8">
-          <div className="hidden mt-12 lg:grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-3">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <div className="space-y-6">
-                  <LogoIcon />
-                </div>
-              </div>
-              <div className="hidden lg:block">
-                <h3 className="text-14 lg:text-20 font-semibold text-yellow-default uppercase">
-                  Technology
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.technology.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-14 text-tw-white hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="hidden lg:grid lg:grid-cols-2 lg:gap-8">
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-20 font-semibold text-yellow-default tracking-wider uppercase">
-                  Community
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.community.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-14 text-tw-white hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-20 font-semibold text-yellow-default tracking-wider uppercase">
-                  More
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.more.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-14 text-tw-white hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div className="hidden w-full justify-between md:flex py-12">
+        <div>
+          <LogoIcon />
         </div>
-        <div className="mt-12 pt-8">
+        <div className="mt-12 md:mt-0">
+          <h3 className="text-12 lg:text-20 font-semibold text-yellow-default uppercase">
+            Technology
+          </h3>
+          <ul role="list" className="mt-4 space-y-4">
+            {navigation.technology.map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.href}
+                  className="text-10 lg:text-15 text-tw-white hover:text-gray-900"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="mt-12 md:mt-0">
+          <h3 className="text-12 lg:text-20 font-semibold text-yellow-default tracking-wider uppercase">
+            Community
+          </h3>
+          <ul role="list" className="mt-4 space-y-4">
+            {navigation.community.map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.href}
+                  className="text-10 lg:text-15 text-tw-white hover:text-gray-900"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="mt-12 md:mt-0">
+          <h3 className="text-12 lg:text-20 font-semibold text-yellow-default tracking-wider uppercase">
+            More
+          </h3>
+          <ul role="list" className="mt-4 space-y-4">
+            {navigation.more.map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.href}
+                  className="text-10 lg:text-15 text-tw-white hover:text-gray-900"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* <div className="mt-12 pt-8">
           <p className="text-base text-tw-white text-center">
             &copy; 2022 a4x, Inc. All rights reserved.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   )
@@ -84,18 +74,16 @@ export const Footer = () => {
 
 const navigation = {
   technology: [
-    { name: 'Documentation', href: '#' },
-    { name: 'Github', href: '#' },
-    { name: 'Testnet', href: '#' },
+    { name: 'Documentation - Soon', href: '#' },
+    { name: 'Github - Soon', href: '#' },
   ],
   community: [
-    { name: 'Twitter', href: '#' },
-    { name: 'Discord', href: '#' },
+    { name: 'Twitter', href: 'https://twitter.com/Supernovazone' },
+    { name: 'Discord - Soon', href: '#' },
   ],
   more: [
-    { name: 'Contact us', href: '#' },
-    { name: 'F&Q', href: '#' },
-    { name: 'Testnet', href: '#' },
+    { name: 'Contact us - Soon', href: '#' },
+    { name: 'F&Q - Soon', href: '#' },
   ],
   // social: [
   //   {
