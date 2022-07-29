@@ -31,7 +31,7 @@ export const Ecosystem = () => {
             <div className="w-1/3 pr-4 flex items-center">
               <img
                 className="w-[100px] h-[100px]"
-                src="../../assets/ATOM.svg"
+                src="/assets/ATOM.svg"
               />
             </div>
             <div className="w-2/3 my-auto">
@@ -48,7 +48,7 @@ export const Ecosystem = () => {
             <div className="w-1/3 pr-4 flex items-center">
               <img
                 className="w-[100px] h-[100px]"
-                src="../../assets/OSMO.svg"
+                src="/assets/OSMO.svg"
               />
             </div>
             <div className="w-2/3 my-auto">
@@ -66,7 +66,7 @@ export const Ecosystem = () => {
             <div className="w-1/3 pr-4 flex items-center">
               <img
                 className="w-[100px] h-[100px]"
-                src="../../assets/JUNO.svg"
+                src="/assets/JUNO.svg"
               />
             </div>
             <div className="w-2/3 my-auto">

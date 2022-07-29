@@ -51,7 +51,7 @@ export const Work = () => {
             >
               <Image
                 className="rounded-2xl"
-                src="../../assets/icon1.gif"
+                src="/assets/icon1.gif"
                 width={250}
                 height={250}
               />
@@ -125,7 +125,7 @@ export const Work = () => {
               >
                 <Image
                   className="rounded-2xl"
-                  src="../../assets/icon2.gif"
+                  src="/assets/icon2.gif"
                   width={250}
                   height={250}
                 />
@@ -141,7 +141,7 @@ export const Work = () => {
             >
               <Image
                 className="rounded-2xl"
-                src="../../assets/icon3.gif"
+                src="/assets/icon3.gif"
                 width={250}
                 height={250}
               />
