@@ -26,7 +26,7 @@ export const Hero = () => {
       <div className="w-full">
         <div
           id="down"
-          className="relative text-left flex justify-start pb-8  md:pb-20 lg:pb-28 pt-12 2xl:pt-30"
+          className="relative text-left flex justify-start pb-8 md:pb-20 lg:pb-28 pt-12 2xl:pt-30"
         >
           <main className="mt-12 md:mt-48 w-full">
             <h1 className="text-center font-bold text-24 md:leading-16 md:text-48 lg:text-left xl:leading-20 xl:text-64 2xl:leading-24 2xl:text-90">
