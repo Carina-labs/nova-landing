@@ -9,9 +9,10 @@ import { Hero } from '../components/Hero'
 
 const Home: NextPage = () => {
   const styling = {
-    backgroundImage: "url('/assets/1440-02.png')",
+    backgroundImage: "url('/assets/1920.svg')",
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    backgroundPosition: 'center',
   }
 
   return (
