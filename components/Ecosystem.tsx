@@ -1,50 +1,84 @@
-import Image from 'next/image'
-import React from 'react'
-
-const stats = [
-  {
-    name: 'ATOM',
-    desc: 'Lorem ipsum dolor sit amet, nonummy nibh euismod.',
-    src: '../../assets/ATOM.svg',
-  },
-  {
-    name: 'OSMO',
-    desc: 'Lorem ipsum dolor sit amet, nonummy nibh euismod.',
-    src: '../../assets/OSMO.svg',
-  },
-  {
-    name: 'JUNO',
-    desc: 'Lorem ipsum dolor sit amet, nonummy nibh euismod.',
-    src: '../../assets/JUNO.svg',
-  },
-]
+import React, { useEffect } from 'react'
 
 export const Ecosystem = () => {
+  useEffect(() => {
+    const downCallback = function (entries: any) {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeInDtoU')
+        } else {
+          entry.target.classList.remove('animate-fadeInDtoU')
+        }
+      })
+    }
+
+    const downObserver = new IntersectionObserver(downCallback)
+
+    const down = document.querySelectorAll('#down')
+    down.forEach(function (target) {
+      downObserver.observe(target)
+    })
+  }, [])
   return (
-    <div className="relative pt-16 pb-12 overflow-hidden">
-      <h1 className="text-tw-white text-34 font-extrabold text-center tracking-tight mb-8">
+    <div id="down" className="relative pt-80 pb-80 overflow-hidden">
+      <h1 className="text-tw-white text-40 font-extrabold text-center mb-8">
         Supernova Ecosystem
       </h1>
-      <div className="max-w-5xl mx-auto">
-        <dl className="mt-10 py-3 grid grid-cols-1 gap-5 sm:grid-cols-3">
-          {stats.map((item) => (
-            <div
-              key={item.name}
-              className="flex border-2 border-yellow-default py-2 bg-white shadow rounded-lg overflow-hidden sm:p-6"
-            >
-              <div className="flex items-center mr-4">
-                <img className="w-36 h-36" src={item.src} />
-              </div>
-              <div className="mt-3">
-                <dt className="text-left text-24 font-bold text-gray-500 truncate">
-                  {item.name}
-                </dt>
-                <dd className="mt-1 text-left text-sm font-medium text-black">
-                  {item.desc}
-                </dd>
-              </div>
+      <div className="w-3/4 mx-auto">
+        <dl className="mt-2 py-2 lg:flex lg:justify-center">
+          {/* ATOM */}
+          <div className="w-1/3 h-[180px] mx-auto px-6 lg:mx-2 mb-2 flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
+            <div className="w-1/3 pr-4 flex items-center">
+              <img
+                className="w-[100px] h-[100px]"
+                src="../../assets/ATOM.svg"
+              />
             </div>
-          ))}
+            <div className="w-2/3 my-auto">
+              <dt className=" text-left text-24 font-bold text-gray-500 truncate">
+                ATOM
+              </dt>
+              <dd className="mt-1 text-left text-12 font-medium text-black">
+                Cosmos is the Internet of Blockchains.
+              </dd>
+            </div>
+          </div>
+          {/* OSMO */}
+          <div className="w-1/3 h-[180px] mx-auto px-6 lg:mx-2 mb-2 flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
+            <div className="w-1/3 pr-4 flex items-center">
+              <img
+                className="w-[100px] h-[100px]"
+                src="../../assets/OSMO.svg"
+              />
+            </div>
+            <div className="w-2/3 my-auto">
+              <dt className="text-left text-24 font-bold text-gray-500 truncate">
+                OSMO
+              </dt>
+              <dd className="mt-1 text-left text-12 font-medium text-black">
+                A cross-chain automated market maker(AMM) protocol built using
+                the Cosmos SDK.
+              </dd>
+            </div>
+          </div>
+          {/* JUNO */}
+          <div className="w-1/3 h-[180px] mx-auto px-6 lg:mx-2 mb-2 flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
+            <div className="w-1/3 pr-4 flex items-center">
+              <img
+                className="w-[100px] h-[100px]"
+                src="../../assets/JUNO.svg"
+              />
+            </div>
+            <div className="w-2/3 my-auto">
+              <dt className="text-left text-24 font-bold text-gray-500 truncate">
+                JUNO
+              </dt>
+              <dd className="mt-1 text-left text-12 font-medium text-black">
+                A decentralized, public, permission-less network for cross-chain
+                smart contracts.
+              </dd>
+            </div>
+          </div>
         </dl>
       </div>
     </div>
