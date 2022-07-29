@@ -1,6 +1,7 @@
 {
   "name": "nova-landing",
   "version": "0.1.0",
+  "homepage": "https://carina-labs.github.io/nova-landing/",
   "private": true,
   "scripts": {
     "dev": "next dev",
