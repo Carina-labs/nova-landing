@@ -20,11 +20,14 @@ export const Ecosystem = () => {
     })
   }, [])
   return (
-    <div id="down" className="relative pt-80 pb-80 overflow-hidden">
+    <div
+      id="down"
+      className="hidden md:block relative pt-80 pb-80 overflow-hidden mx-28 xl:mx-44 2xl:mx-100 3xl:mx-120"
+    >
       <h1 className="text-tw-white text-40 font-extrabold text-center mb-8">
         Supernova Ecosystem
       </h1>
-      <div className="w-3/4 mx-auto">
+      <div className="w-full mx-auto">
         <dl className="mt-2 py-2 lg:flex lg:justify-center">
           {/* ATOM */}
           <div className="w-1/3 h-[180px] mx-auto px-6 lg:mx-2 mb-2 flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">

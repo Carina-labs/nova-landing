@@ -39,12 +39,12 @@ export const Work = () => {
   return (
     <>
       <div className="relative pt-12 pb-32 overflow-hidden">
-        <h1 className="text-tw-white text-40 font-extrabold text-center">
+        <h1 className="text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 2xl:text-62">
           How it works
         </h1>
-        <div className="border-2 border-yellow-default rounded-2xl mt-12 bg-tw-white mx-32 lg:mx-44">
+        <div className="border-2 border-yellow-default rounded-2xl bg-tw-white mx-10 mt-4 md:mt-12 md:mx-28 xl:mx-44 2xl:mx-100 3xl:mx-120">
           {/* 01 Liquid Staking */}
-          <div className="mt-12 block lg:flex w-full px-16 mx-auto">
+          <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 lg:flex">
             <div
               id="left"
               className="w-1/2 lg:w-[450px] text-center mx-auto py-6"
@@ -57,11 +57,13 @@ export const Work = () => {
               />
             </div>
             <div id="right" className="py-6 w-full mx-auto">
-              <div className="lg:ml-20">
+              <div className="lg:ml-20 xl:ml-32">
                 <span className="h-6 w-6 rounded-md flex items-center justify-center">
-                  <p className="text-blue-default font-bold text-26">01</p>
+                  <p className="text-blue-default font-bold mr-1 md:ml-1 md:text-22 lg:text-26 3xl:text-34">
+                    01
+                  </p>
                 </span>
-                <h2 className="text-28 font-bold text-gray-900 mb-8">
+                <h2 className=" font-bold text-gray-900 mb-8 text-18 md:text-24 lg:text-28 3xl:text-36">
                   Liquid Staking
                 </h2>
                 <ul className="list-disc font-normal ml-4 mt-3">
@@ -86,19 +88,19 @@ export const Work = () => {
           </div>
 
           {/* 02 Staked Swap */}
-          <div className="mt-12 w-full px-16 mx-auto">
+          <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 lg:pl-24 lg:flex">
             <div className="w-full flex flex-col-reverse lg:flex lg:flex-row border-y-4 border-yellow-default">
               <div
                 id="left"
                 className="pl-1 pt-12 pb-24 lg:py-24 w-full mx-auto"
               >
-                <div className="mr-20">
+                <div className="md:mr-20">
                   <span className="h-6 w-6 rounded-md flex items-center justify-center">
-                    <p className="text-blue-default font-bold text-26 ml-1">
+                    <p className="text-blue-default font-bold text-16 mr-1 md:ml-1 md:text-22 lg:text-26  3xl:text-34">
                       02
                     </p>
                   </span>
-                  <h2 className=" text-28 font-bold text-gray-900 mb-8">
+                  <h2 className="font-bold text-gray-900 mb-8 text-18 md:text-24 lg:text-28 3xl:text-36">
                     Staked Swap
                   </h2>
                   <ul className="list-disc font-normal ml-4 mt-3">
@@ -134,7 +136,7 @@ export const Work = () => {
           </div>
 
           {/* 03 Governance */}
-          <div className="mt-12 block lg:flex w-full px-16 mx-auto pb-22">
+          <div className="block w-full mx-auto px-6 pb-6 md:pb-22 md:px-16 md:mt-12 lg:flex">
             <div
               id="left"
               className="w-1/2 lg:w-[450px] text-center mx-auto py-6"
@@ -147,11 +149,13 @@ export const Work = () => {
               />
             </div>
             <div id="right" className="py-6 w-full mx-auto">
-              <div className="lg:ml-20">
+              <div className="lg:ml-20 xl:ml-32">
                 <span className="h-6 w-6 rounded-md flex items-center justify-center">
-                  <p className="text-blue-default font-bold text-26">03</p>
+                  <p className="text-blue-default font-bold mr-2 md:ml-1 md:text-22 lg:text-26 ml-1 3xl:text-34">
+                    03
+                  </p>
                 </span>
-                <h2 className="text-28 font-bold text-gray-900 mb-8">
+                <h2 className="font-bold text-gray-900 mb-8 text-18 md:text-24 lg:text-28 3xl:text-36">
                   Governance
                 </h2>
                 <ul className="list-disc font-normal ml-4 mt-3">
