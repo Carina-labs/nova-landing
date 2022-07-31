@@ -2,14 +2,14 @@ import React from 'react'
 
 export const LogoIcon = () => {
   return (
-    <div className="flex justify-start items-center">
+    <div className="flex justify-center items-center">
       <img
-        className="block h-5 lg:h-7 w-auto xl:h-9"
+        className="block w-auto h-7 lg:h-8 2xl:h-9 3xl:h-10"
         src="/assets/Logo.svg"
         alt="Logo"
       />
       <img
-        className="block h-3 lg:h-4 w-auto ml-2 xl:h-5"
+        className="block ml-2 w-auto lg:h-4 2xl:h-5 3xl:h-6"
         src="/assets/Supernova.svg"
         alt="Supernova"
       />

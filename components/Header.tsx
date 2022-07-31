@@ -1,6 +1,4 @@
 import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { classNames } from 'utils/className'
 import { LogoIcon } from './icons/LogoIcon'
 
 const navigation = [
@@ -15,8 +13,8 @@ export const Header = () => {
   return (
     <Disclosure as="nav" className="w-full relative z-10 bg-tw-black">
       <>
-        <div className="mx-28 xl:mx-44 2xl:mx-100 3xl:mx-120">
-          <div className="w-full relative flex items-center h-22 justify-between">
+        <div className="mx-28 xl:mx-44 2xl:mx-96 3xl:mx-160">
+          <div className="w-full relative flex items-center h-14 sm:h-22 justify-between">
             <div className="mx-auto lg:mx-0 lg:flex items-center">
               <LogoIcon />
             </div>
