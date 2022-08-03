@@ -8,16 +8,16 @@ import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 
 const Home: NextPage = () => {
-  const styling = {
-    backgroundImage: "url('/assets/1920.svg')",
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }
-
   return (
     <>
-      <div style={styling}>
+      <div className="relative w-full h-auto z-[-1]">
+        <Image
+          priority
+          alt="background"
+          layout="fill"
+          objectFit="cover"
+          src={'/assets/1920(c).svg'}
+        />
         <Header />
         <Hero />
         <WorknEco />
