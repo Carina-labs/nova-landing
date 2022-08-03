@@ -28,7 +28,7 @@ export const Hero = () => {
         >
           <main className="mt-12 md:mt-48 w-full">
             <h1 className="text-center font-bold text-24 md:leading-20 md:text-64 lg:text-left xl:leading-22 xl:text-70 2xl:leading-24 2xl:text-90 3xl:leading-32 3xl:text-102">
-              <span className="text-tw-white block">Ultimate money lego~ </span>
+              <span className="text-tw-white block">Ultimate money lego </span>
               <span className="text-tw-white block">for staked assets</span>
             </h1>
             <p className="text-center text-tw-white sm:pb-10 mt-4 text-8 sm:mt-10 md:text-20 lg:text-left xl:text-23 2xl:leading-12 2xl:text-26 3xl:text-32">
