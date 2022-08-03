@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 export const Hero = () => {
   useEffect(() => {
@@ -41,13 +41,11 @@ export const Hero = () => {
             </p>
             <div className="mt-12 flex justify-center lg:justify-start lg:mt-18">
               <div className="bg-blue-default hover:bg-purple mt-3 rounded-2xl">
-                <Link href="https://twitter.com/Supernovazone">
-                  <a target="_blank">
-                    <button className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24 3xl:text-30">
-                      Follow for Updates
-                    </button>
-                  </a>
-                </Link>
+                <button className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24 3xl:text-30">
+                  <Link href="https://twitter.com/Supernovazone">
+                    <a target="_blank">Follow for Updates</a>
+                  </Link>
+                </button>
               </div>
             </div>
           </main>

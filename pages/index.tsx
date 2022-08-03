@@ -10,7 +10,7 @@ import { Hero } from '../components/Hero'
 const Home: NextPage = () => {
   return (
     <>
-      <div className="relative w-full h-auto z-[-1]">
+      <div className="relative w-full h-auto z-[1]">
         <Image
           priority
           alt="background"
