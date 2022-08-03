@@ -16,7 +16,7 @@ const Home: NextPage = () => {
           alt="background"
           layout="fill"
           objectFit="cover"
-          src="/assets/1920.svg"
+          src="/assets/bg.svg"
         />
         <Header />
         <Hero />
