@@ -68,7 +68,7 @@ export const Hero = () => {
       <div className="w-full">
         <div
           id="down"
-          className="relative text-left flex justify-start pb-8 md:pb-20 lg:pb-28"
+          className="relative text-left flex justify-start md:pb-20 lg:pb-28"
         >
           <main className="mt-[6rem] md:mt-[12.5rem] w-full">
             <h1 className="font-bold text-24 md:leading-20 md:text-64 lg:text-left xl:leading-22 xl:text-70 2xl:leading-24 2xl:text-90">

@@ -10,7 +10,7 @@ import { Hero } from '../components/Hero'
 const Home: NextPage = () => {
   return (
     <div className="relative h-auto ">
-      <div className="z-[-1] h-[1760px] absolute top-[90px] w-full">
+      <div className="z-[-1] h-[1760px] absolute top-0 w-full">
         <video className="w-full" autoPlay muted loop>
           <source src="/assets/Landing_1920.1760.mp4" type="video/mp4" />
         </video>
