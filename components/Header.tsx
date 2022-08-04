@@ -15,8 +15,8 @@ export const Header = () => {
       as="nav"
       className="xl:w-[1300px] mx-auto relative z-10 bg-tw-black "
     >
-      <div className="mx-[2.5rem]">
-        <div className="w-full relative flex items-center h-14 sm:h-[90px] justify-between">
+      <div className="mx-[2rem]">
+        <div className="w-full relative flex items-center h-[50px] md:h-[90px] justify-between">
           <div className="mx-auto lg:mx-0 lg:flex items-center">
             <LogoIcon />
           </div>

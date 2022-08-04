@@ -33,8 +33,8 @@ export const Work = () => {
   }, [])
   return (
     <>
-      <div className="relative pt-4 overflow-hidden">
-        <h1 className="mb-[4.2rem] text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-[3.75]">
+      <div className="relative overflow-hidden">
+        <h1 className="mb-[1.6rem] md:mb-[4.2rem] text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-[3.75]">
           How it works
         </h1>
         <div className="border-2 border-yellow-default rounded-2xl bg-tw-white xl:w-[1300px] xl:mx-auto">

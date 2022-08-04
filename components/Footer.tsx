@@ -4,7 +4,7 @@ import { LogoIcon } from './icons/LogoIcon'
 export const Footer = () => {
   return (
     <footer
-      className="relative z-20 mx-10 md:mx-28 xl:mx-44 2xl:mx-96 3xl:mx-160"
+      className="relative z-20 xl:w-[1300px] mx-auto"
       aria-labelledby="footer-heading"
     >
       <div className="hidden w-full justify-between md:flex py-12">
