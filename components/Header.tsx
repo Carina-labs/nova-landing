@@ -11,14 +11,16 @@ const navigation = [
 
 export const Header = () => {
   return (
-    <Disclosure as="nav" className="w-full relative z-10 bg-tw-black">
-      <>
-        <div className="mx-28 xl:mx-44 2xl:mx-96 3xl:mx-160">
-          <div className="w-full relative flex items-center h-14 sm:h-22 justify-between">
-            <div className="mx-auto lg:mx-0 lg:flex items-center">
-              <LogoIcon />
-            </div>
-            {/* <div className="block">
+    <Disclosure
+      as="nav"
+      className="xl:w-[1300px] mx-auto relative z-10 bg-tw-black "
+    >
+      <div className="mx-[2.5rem]">
+        <div className="w-full relative flex items-center h-14 sm:h-[90px] justify-between">
+          <div className="mx-auto lg:mx-0 lg:flex items-center">
+            <LogoIcon />
+          </div>
+          {/* <div className="block">
               <div className="hidden space-x-3 lg:flex ">
                 {navigation.map((item) => (
                   <a
@@ -40,9 +42,8 @@ export const Header = () => {
                 </div>
               </div>
             </div> */}
-          </div>
         </div>
-      </>
+      </div>
     </Disclosure>
   )
 }

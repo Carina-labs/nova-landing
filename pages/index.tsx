@@ -9,14 +9,13 @@ import { Hero } from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
-    <div className="relative w-full h-auto">
-      <div className="z-[-1] h-[1760px] absolute top-0 w-full">
-        <video autoPlay muted loop>
+    <div className="relative h-auto ">
+      <div className="z-[-1] h-[1760px] absolute top-[90px] w-full">
+        <video className="w-full" autoPlay muted loop>
           <source src="/assets/Landing_1920.1760.mp4" type="video/mp4" />
         </video>
       </div>
-
-      <div className="z-[-1] w-full h-[2200px] absolute bottom-0">
+      <div className="z-[-1] w-full xl:h-[2000px] absolute bottom-0">
         <Image
           className="w-full h-full object-cover"
           priority

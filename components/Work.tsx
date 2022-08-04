@@ -33,11 +33,11 @@ export const Work = () => {
   }, [])
   return (
     <>
-      <div className="relative pt-4 pb-32 overflow-hidden">
-        <h1 className="text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-48 2xl:text-62 3xl:text-64">
+      <div className="relative pt-4 overflow-hidden">
+        <h1 className="mb-[4.2rem] text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-[3.75]">
           How it works
         </h1>
-        <div className="border-2 border-yellow-default rounded-2xl bg-tw-white mx-10 mt-4 md:mt-12 md:mx-28 xl:mx-44 2xl:mx-96 3xl:mx-160">
+        <div className="border-2 border-yellow-default rounded-2xl bg-tw-white xl:w-[1300px] xl:mx-auto">
           {/* 01 Liquid Staking */}
           <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 lg:flex">
             <div className="animate-fadeInLtoR w-1/2 lg:w-[450px] text-center mx-auto py-6">
