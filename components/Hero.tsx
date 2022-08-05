@@ -3,32 +3,22 @@ import { useSubscribe } from 'pages/api/subscribe'
 import React, { useEffect, useState } from 'react'
 
 export const Hero = () => {
-  // useEffect(() => {
-  //   const downCallback = function (entries: any) {
-  //     entries.forEach((entry: any) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add('animate-fadeInDtoU')
-  //       }
-  //     })
-  //   }
+  useEffect(() => {
+    const downCallback = function (entries: any) {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeInDtoU')
+        }
+      })
+    }
 
-  //   const downObserver = new IntersectionObserver(downCallback)
+    const downObserver = new IntersectionObserver(downCallback)
 
-  //   const down = document.querySelectorAll('#down')
-  //   down.forEach(function (target) {
-  //     downObserver.observe(target)
-  //   })
-  // }, [])
-  // const [subRes, subFetch] = useSubscribe()
-  // console.log(subRes)
-
-  // const handleSubscribe: React.MouseEventHandler<
-  //   HTMLButtonElement | HTMLAnchorElement
-  // > = (e) => {
-  //   console.log('click!')
-  //   props.onClick?.(e)
-  //   subFetch()
-  // }
+    const down = document.querySelectorAll('#down')
+    down.forEach(function (target) {
+      downObserver.observe(target)
+    })
+  }, [])
   const API_KEY =
     'c9dfdff367c22118f33d459fd2e13293768693a1b769f96fda73814ae5a547e9755ec8b968baf176000adc5a98bc376ee0ee5f7aff850da57f51d7052c4d1e69'
   const BASE_URL = 'https://api.stibee.com/v1'
@@ -42,7 +32,7 @@ export const Hero = () => {
     },
     body: JSON.stringify({
       eventOccuredBy: 'MANUAL',
-      confirmEmailYN: 'Y',
+      confirmEmailYN: 'N',
       subscribers: [
         {
           email: 'ckh0601@gmail.com',
