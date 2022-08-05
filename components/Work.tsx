@@ -44,8 +44,16 @@ export const Work = () => {
               <Image
                 id="left"
                 priority
-                className="rounded-2xl"
+                className="z-[1] rounded-2xl"
                 src="/assets/icon1.gif"
+                width={250}
+                height={250}
+              />
+              <Image
+                id="left"
+                priority
+                className="z-[2] rounded-2xl"
+                src="/assets/icon2.gif"
                 width={250}
                 height={250}
               />

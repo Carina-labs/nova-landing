@@ -7,8 +7,8 @@ export const Footer = () => {
       className="relative z-20 xl:w-[1300px] mx-auto"
       aria-labelledby="footer-heading"
     >
-      <div className="hidden w-full justify-between md:flex py-12">
-        <div>
+      <div className="block text-center w-full justify-between md:flex py-12">
+        <div className="">
           <LogoIcon />
         </div>
         <div className="mt-12 md:mt-0">
@@ -47,7 +47,7 @@ export const Footer = () => {
         </div>
         <div className="mt-12 md:mt-0">
           <h3 className="text-12 lg:text-20 font-semibold text-yellow-default tracking-wider uppercase">
-            More
+            About
           </h3>
           <ul role="list" className="mt-3 space-y-2">
             {navigation.about.map((item) => (

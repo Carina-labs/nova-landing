@@ -86,7 +86,7 @@ export const Hero = () => {
               {hide ? (
                 <div className="flex items-center">
                   <input
-                    className="py-5 px-10 rounded-2xl mr-4"
+                    className="py-1 px-4 md:py-5 md:px-10 rounded-2xl mr-4"
                     type="email"
                     placeholder="Write your E-mail"
                     value={email}
@@ -96,7 +96,7 @@ export const Hero = () => {
                   <div className=" bg-blue-default hover:bg-purple rounded-2xl">
                     <button
                       onClick={handleSubscribe}
-                      className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24 3xl:text-30"
+                      className="text-tw-white w-full flex items-center justify-center font-bold text-12 py-2 px-5 md:py-3 md:text-16 md:px-10 xl:text-20 2xl:text-24 3xl:text-30"
                     >
                       Submit
                     </button>
