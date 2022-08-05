@@ -7,7 +7,7 @@ export const Footer = () => {
       className="relative z-20 xl:w-[1300px] mx-auto"
       aria-labelledby="footer-heading"
     >
-      <div className="block text-center w-full justify-between md:flex py-12">
+      <div className="block text-center md:text-left w-full justify-between md:flex py-12">
         <div className="">
           <LogoIcon />
         </div>

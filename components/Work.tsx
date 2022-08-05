@@ -41,19 +41,17 @@ export const Work = () => {
           {/* 01 Liquid Staking */}
           <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 lg:flex">
             <div className="animate-fadeInLtoR w-1/2 lg:w-[450px] text-center mx-auto py-6">
+              {/* <div
+                className="bg-[#121200] w-[400px] h-[400px]"
+                style={{
+                  backgroundImage: 'url(assets/Frame(1).png)',
+                }}
+              > */}
               <Image
                 id="left"
                 priority
-                className="z-[1] rounded-2xl"
+                className="rounded-2xl"
                 src="/assets/icon1.gif"
-                width={250}
-                height={250}
-              />
-              <Image
-                id="left"
-                priority
-                className="z-[2] rounded-2xl"
-                src="/assets/icon2.gif"
                 width={250}
                 height={250}
               />
