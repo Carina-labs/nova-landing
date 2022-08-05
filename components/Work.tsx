@@ -43,6 +43,7 @@ export const Work = () => {
             <div className="animate-fadeInLtoR w-1/2 lg:w-[450px] text-center mx-auto py-6">
               <Image
                 id="left"
+                priority
                 className="rounded-2xl"
                 src="/assets/icon1.gif"
                 width={250}
@@ -117,6 +118,7 @@ export const Work = () => {
               <div className="w-1/2 lg:w-[450px] text-center mx-auto pt-10 sm:pt-24 lg:py-24">
                 <Image
                   id="right"
+                  priority
                   className="rounded-2xl"
                   src="/assets/icon2.gif"
                   width={250}
@@ -131,6 +133,7 @@ export const Work = () => {
             <div className="w-1/2 lg:w-[450px] text-center mx-auto py-6">
               <Image
                 id="left"
+                priority
                 className="rounded-2xl"
                 src="/assets/icon3.gif"
                 width={250}
