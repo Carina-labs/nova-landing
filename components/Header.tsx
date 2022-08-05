@@ -12,7 +12,7 @@ export const Header = () => {
           </div>
           {/* <FontAwesomeIcon icon={faMedium} /> */}
           <div className="flex items-center">
-            <Link href="https://twitter.com/Supernovazone">
+            <Link href="/">
               <a target="_blank" className="ml-8">
                 <p className="text-white text-22">Docs</p>
               </a>

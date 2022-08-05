@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import { useSubscribe } from 'pages/api/subscribe'
+import { env } from 'process'
 import React, { useEffect, useState } from 'react'
 
 export const Hero = () => {
+  const [hide, setHide] = useState(false)
   useEffect(() => {
     const downCallback = function (entries: any) {
       entries.forEach((entry: any) => {
@@ -11,9 +13,7 @@ export const Hero = () => {
         }
       })
     }
-
     const downObserver = new IntersectionObserver(downCallback)
-
     const down = document.querySelectorAll('#down')
     down.forEach(function (target) {
       downObserver.observe(target)
@@ -24,6 +24,7 @@ export const Hero = () => {
   const BASE_URL = 'https://api.stibee.com/v1'
   const listId = '198055'
   const [res, setRes] = useState()
+  const [email, setEmail] = useState('')
   let option = {
     method: 'POST',
     headers: {
@@ -35,12 +36,13 @@ export const Hero = () => {
       confirmEmailYN: 'N',
       subscribers: [
         {
-          email: 'ckh0601@gmail.com',
-          name: 'scott choo',
+          email: email,
+          name: 'supernova',
         },
       ],
     }),
   }
+  console.log(option)
   const handleSubscribe = async () => {
     try {
       const data = await (
@@ -50,8 +52,15 @@ export const Hero = () => {
     } catch (err) {
       console.log(err)
     }
+    setEmail('')
   }
   console.log(res)
+
+  const onChangeEmail = (e: any) => {
+    const email = e.target.value
+    setEmail(email)
+    console.log(email)
+  }
 
   return (
     <div className="relative overflow-hidden mx-[2.5rem] xl:mx-auto xl:w-[1300px]">
@@ -74,20 +83,35 @@ export const Hero = () => {
               </span>
             </p>
             <div className="mt-[2rem] md:mt-[9.25rem] flex justify-start lg:mt-18">
-              <div className="bg-blue-default hover:bg-purple mt-3 rounded-2xl">
-                <button className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24">
-                  <Link href="https://twitter.com/Supernovazone">
-                    <a target="_blank">Follow for Updates</a>
-                  </Link>
-                </button>
+              {hide ? (
+                <div className="flex items-center">
+                  <input
+                    className="py-5 px-10 rounded-2xl mr-4"
+                    type="email"
+                    placeholder="Write your E-mail"
+                    value={email}
+                    onChange={onChangeEmail}
+                  />
 
-                {/* <button
-                  onClick={handleSubscribe}
-                  className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24 3xl:text-30"
-                >
-                  Subscribe
-                </button> */}
-              </div>
+                  <div className=" bg-blue-default hover:bg-purple rounded-2xl">
+                    <button
+                      onClick={handleSubscribe}
+                      className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24 3xl:text-30"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="bg-blue-default hover:bg-purple mt-3 rounded-2xl">
+                  <button
+                    onClick={() => setHide(true)}
+                    className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24"
+                  >
+                    Follow for Updates
+                  </button>
+                </div>
+              )}
             </div>
           </main>
         </div>
