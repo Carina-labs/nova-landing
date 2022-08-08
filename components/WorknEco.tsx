@@ -6,7 +6,7 @@ import { Work } from './Work'
 export const WorknEco = () => {
   return (
     <>
-      <div className="relative z-20 pt-20 pb-20 overflow-hidden">
+      <div className="relative z-20 pt-20 md:pb-20 overflow-hidden">
         <Work />
         <Ecosystem />
       </div>

@@ -18,15 +18,15 @@ export const Ecosystem = () => {
   return (
     <div
       id="down"
-      className="hidden md:block relative mt-[19.375rem] pb-80 overflow-hidden xl:w-[1300px] mx-auto"
+      className="px-[1.7rem] md:block relative mt-[5.2rem] md:mt-[16rem] pb-[5.4rem] overflow-hidden xl:w-[1300px] mx-auto"
     >
       <h1 className="text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-48 2xl:text-62 3xl:text-64">
         Supernova Ecosystem
       </h1>
       <div className="w-full mx-auto">
-        <dl className="mt-[4.5rem] py-2 lg:flex lg:justify-center">
+        <dl className="mt-[1.5rem] md:mt-[4.5rem] py-2 lg:flex lg:justify-center">
           {/* ATOM */}
-          <div className="w-1/3 h-[160px] lg:h-[180px] mx-auto px-6 lg:mx-2 mb-2 flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
+          <div className="md:w-1/3 h-[160px] lg:h-[180px] mx-auto px-6 lg:mx-2 mb-[1.1rem] flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
             <div className="w-1/3 pr-4 flex items-center">
               <img className="w-[100px] h-[100px]" src="/assets/ATOM.svg" />
             </div>
@@ -40,7 +40,7 @@ export const Ecosystem = () => {
             </div>
           </div>
           {/* OSMO */}
-          <div className="w-1/3 h-[160px] lg:h-[180px] mx-auto px-6 lg:mx-2 mb-2 flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
+          <div className="md:w-1/3 h-[160px] lg:h-[180px] mx-auto px-6 lg:mx-2 mb-[1.1rem] flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
             <div className="w-1/3 pr-4 flex items-center">
               <img className="w-[100px] h-[100px]" src="/assets/OSMO.svg" />
             </div>
@@ -55,7 +55,7 @@ export const Ecosystem = () => {
             </div>
           </div>
           {/* JUNO */}
-          <div className="w-1/3 h-[160px] lg:h-[180px] mx-auto px-6 lg:mx-2 mb-2 flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
+          <div className="md:w-1/3 h-[160px] lg:h-[180px] mx-auto px-6 lg:mx-2 mb-[1.1rem] flex border-2 border-yellow-default bg-white shadow rounded-2xl overflow-hidden">
             <div className="w-1/3 pr-4 flex items-center">
               <img className="w-[100px] h-[100px]" src="/assets/JUNO.svg" />
             </div>
