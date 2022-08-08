@@ -1,10 +1,6 @@
-import Link from 'next/link'
-import { useSubscribe } from 'pages/api/subscribe'
-import { env } from 'process'
 import React, { useEffect, useState } from 'react'
 
 export const Hero = () => {
-  const [hide, setHide] = useState(false)
   useEffect(() => {
     const downCallback = function (entries: any) {
       entries.forEach((entry: any) => {
@@ -22,7 +18,7 @@ export const Hero = () => {
   const API_KEY =
     '382e10fec5875a9d0b03c9513141cfebf28ecf7c4e598d62609b1d9b2bfe9dce03ebd8ab5dc8fce78b6b3ae87bac9e37254a1f55d79e9e3b68bca193dff87ff9'
   const BASE_URL = 'https://api.stibee.com/v1'
-  const listId = '198055'
+  const listId = '198670'
   const [res, setRes] = useState()
   const [email, setEmail] = useState('')
   let option = {
@@ -82,36 +78,24 @@ export const Hero = () => {
                 a combination of ICA, proprietary module and IBC query.
               </span>
             </p>
-            <div className="mt-[2rem] md:mt-[9.25rem] flex justify-start lg:mt-18">
-              {hide ? (
-                <div className="flex items-center">
-                  <input
-                    className="py-1 px-4 md:py-5 md:px-10 rounded-2xl mr-4"
-                    type="email"
-                    placeholder="Write your E-mail"
-                    value={email}
-                    onChange={onChangeEmail}
-                  />
-
-                  <div className=" bg-blue-default hover:bg-purple rounded-2xl">
-                    <button
-                      onClick={handleSubscribe}
-                      className="text-tw-white w-full flex items-center justify-center font-bold text-12 py-2 px-5 md:py-3 md:text-16 md:px-10 xl:text-20 2xl:text-24 3xl:text-30"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              ) : (
-                <div className="bg-blue-default hover:bg-purple mt-3 rounded-2xl">
+            <div className="mt-[2rem] md:mt-[4.8rem] flex justify-start">
+              <div className="flex items-center">
+                <input
+                  className="text-center text-8 rounded-xl mr-[0.7rem] md:mr-[1rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
+                  type="email"
+                  placeholder="Follow for updates @your.mail"
+                  value={email}
+                  onChange={onChangeEmail}
+                />
+                <div className=" bg-blue-default hover:bg-purple rounded-xl">
                   <button
-                    onClick={() => setHide(true)}
-                    className="text-tw-white w-full flex items-center justify-center font-bold py-3 px-10 text-12 md:py-4 md:text-16 md:px-12 xl:text-20 2xl:text-24"
+                    onClick={handleSubscribe}
+                    className="h-[1.8rem] w-[4rem] md:h-[3.3rem] md:w-[9rem] text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10"
                   >
-                    Follow for Updates
+                    Submit
                   </button>
                 </div>
-              )}
+              </div>
             </div>
           </main>
         </div>
