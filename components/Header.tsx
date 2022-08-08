@@ -5,21 +5,21 @@ import { LogoIcon } from './icons/LogoIcon'
 
 export const Header = () => {
   return (
-    <Disclosure as="nav" className="relative z-20 bg-tw-black px-[3rem]">
-      <div className="xl:w-[1300px] mx-auto ">
-        <div className="w-full relative flex items-center h-[50px] md:h-[90px] justify-between">
-          <div className="mx-auto lg:mx-0 lg:flex items-center">
+    <Disclosure as="nav" className="w-full relative z-20 bg-tw-black">
+      <div className="max-w-[1000px] lg:mx-auto">
+        <div className="w-full relative flex items-center h-[50px] md:h-[4.7rem] justify-between">
+          <div className="mx-auto md:mx-0 md:flex items-center">
             <LogoIcon />
           </div>
           <div className="hidden md:flex">
             <Link href="/">
-              <a target="_blank" className="mr-6">
+              <a target="_blank" className="mb-[0.5rem] mr-[1.7rem]">
                 <p className="text-white text-22">Docs</p>
               </a>
             </Link>
             <Link href="https://twitter.com/Supernovazone">
               <a target="_blank">
-                <div className="mr-[1.1rem]">
+                <div className="mt-1 mr-[1.7rem]">
                   <Image
                     alt="twitter"
                     width={25}
@@ -31,7 +31,7 @@ export const Header = () => {
             </Link>
             <Link href="https://discord.com/invite/D43YEygt">
               <a target="_blank">
-                <div className="mr-[1.1rem]">
+                <div className="mt-1 mr-[1.7rem]">
                   <Image
                     alt="discord"
                     width={25}
@@ -43,7 +43,7 @@ export const Header = () => {
             </Link>
             <Link href="https://medium.com/supernovazone">
               <a target="_blank">
-                <div className="mr-[1.1rem]">
+                <div className="mt-1 mr-[1.7rem]">
                   <Image
                     alt="medium"
                     width={25}

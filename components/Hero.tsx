@@ -59,13 +59,13 @@ export const Hero = () => {
   }
 
   return (
-    <div className="relative overflow-hidden mx-[2.5rem] xl:mx-auto xl:w-[1300px]">
+    <div className="relative overflow-hidden max-w-[1000px] mx-[2rem] lg:mx-auto">
       <div className="w-full">
         <div
           id="down"
-          className="relative text-left flex justify-start md:pb-20 lg:pb-28"
+          className="relative text-center md:text-left flex justify-start md:pb-20 lg:pb-28"
         >
-          <main className="mt-[6rem] md:mt-[12.5rem] w-full">
+          <main className="mt-[3.6rem] md:mt-[12.5rem] w-full">
             <h1 className="font-bold text-24 md:leading-20 md:text-64 lg:text-left xl:leading-22 xl:text-70 2xl:leading-24 2xl:text-90">
               <span className="text-tw-white block">Ultimate money lego </span>
               <span className="text-tw-white block">for staked assets</span>
@@ -78,16 +78,16 @@ export const Hero = () => {
                 a combination of ICA, proprietary module and IBC query.
               </span>
             </p>
-            <div className="mt-[2rem] md:mt-[4.8rem] flex justify-start">
+            <div className="mt-[2rem] md:mt-[4.8rem] flex justify-center md:justify-start">
               <div className="flex items-center">
                 <input
-                  className="text-center text-8 rounded-xl mr-[0.7rem] md:mr-[1rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
+                  className="focus:outline-0 border-1 border-blue-default text-center text-8 rounded-xl mr-[0.7rem] md:mr-[1rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
                   type="email"
                   placeholder="Follow for updates @your.mail"
                   value={email}
                   onChange={onChangeEmail}
                 />
-                <div className=" bg-blue-default hover:bg-purple rounded-xl">
+                <div className="bg-blue-default hover:bg-purple rounded-xl">
                   <button
                     onClick={handleSubscribe}
                     className="h-[1.8rem] w-[4rem] md:h-[3.3rem] md:w-[9rem] text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10"

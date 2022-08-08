@@ -9,7 +9,7 @@ export const Footer = () => {
       className="border-yellow-default border-t-2 relative z-20 xl:w-[1300px] mx-auto"
       aria-labelledby="footer-heading"
     >
-      <div className="block text-left w-full justify-between py-[3.2rem] md:flex md:py-[4.8rem] px-[3rem]">
+      <div className="block text-left w-full justify-between py-[3.2rem] md:flex md:py-[4.8rem] px-[2rem]">
         <div className="block">
           <LogoIcon />
           <div className="hidden md:flex justify-start align-center mt-[2.4rem]">

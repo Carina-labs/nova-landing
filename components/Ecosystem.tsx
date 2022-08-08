@@ -18,7 +18,7 @@ export const Ecosystem = () => {
   return (
     <div
       id="down"
-      className="px-[1.7rem] md:block relative mt-[5.2rem] md:mt-[16rem] pb-[5.4rem] overflow-hidden xl:w-[1300px] mx-auto"
+      className="px-[1.7rem] md:block relative mt-[5.2rem] md:mt-[16rem] pb-[5.4rem] overflow-hidden max-w-[1000px] mx-auto"
     >
       <h1 className="text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-48 2xl:text-62 3xl:text-64">
         Supernova Ecosystem
