@@ -6,7 +6,7 @@ import { LogoIcon } from './icons/LogoIcon'
 export const Footer = () => {
   return (
     <footer
-      className="border-yellow-default border-t-2 relative z-20 xl:w-[1300px] mx-auto"
+      className="border-yellow-default border-t-2 relative z-20 max-w-[1000px] mx-auto"
       aria-labelledby="footer-heading"
     >
       <div className="block text-left w-full justify-between py-[3.2rem] md:flex md:py-[4.8rem] px-[2rem]">

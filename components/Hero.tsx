@@ -45,6 +45,7 @@ export const Hero = () => {
         await fetch(`${BASE_URL}/lists/${listId}/subscribers`, option)
       ).json()
       setRes(data)
+      alert('Thanks for your following!')
     } catch (err) {
       console.log(err)
     }
