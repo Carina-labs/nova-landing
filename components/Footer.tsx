@@ -210,7 +210,7 @@ const navigation = {
   ],
   community: [
     { name: 'Twitter', href: 'https://twitter.com/Supernovazone' },
-    { name: 'Discord', href: 'https://discord.com/invite/D43YEygt' },
+    { name: 'Discord', href: 'https://discord.com/invite/AZUrXKGq8t' },
   ],
   about: [
     { name: 'Contact us', href: 'https://twitter.com/Supernovazone' },
