@@ -1,11 +1,10 @@
-import { Stats } from 'components/Stats'
-import { WorknEco } from 'components/WorknEco'
 import type { NextPage } from 'next'
 import Image from 'next/image'
-
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
+import { Ecosystem } from 'components/Ecosystem'
+import { Work } from 'components/Work'
 
 const Home: NextPage = () => {
   return (
@@ -26,7 +25,8 @@ const Home: NextPage = () => {
       </div>
       <Header />
       <Hero />
-      <WorknEco />
+      <Work />
+      <Ecosystem />
       <Footer />
     </div>
   )
