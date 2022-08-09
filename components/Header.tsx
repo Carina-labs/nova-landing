@@ -6,7 +6,7 @@ import { LogoIcon } from './icons/LogoIcon'
 export const Header = () => {
   return (
     <Disclosure as="nav" className="w-full relative z-20 bg-tw-black">
-      <div className="max-w-[1000px] lg:mx-auto">
+      <div className="max-w-[1050px] lg:mx-auto">
         <div className="w-full relative flex items-center h-[50px] md:h-[4.7rem] justify-between">
           <div className="mx-auto md:mx-0 md:flex items-center">
             <LogoIcon />
@@ -29,7 +29,7 @@ export const Header = () => {
                 </div>
               </a>
             </Link>
-            <Link href="https://discord.com/invite/D43YEygt">
+            <Link href="https://discord.com/invite/AZUrXKGq8t">
               <a target="_blank">
                 <div className="mt-1 mr-[1.7rem]">
                   <Image

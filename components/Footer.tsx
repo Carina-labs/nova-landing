@@ -6,7 +6,7 @@ import { LogoIcon } from './icons/LogoIcon'
 export const Footer = () => {
   return (
     <footer
-      className="border-yellow-default border-t-2 relative z-20 max-w-[1000px] mx-auto"
+      className="border-yellow-default border-t-2 relative z-20 max-w-[1050px] mx-auto"
       aria-labelledby="footer-heading"
     >
       <div className="block text-left w-full justify-between py-[3.2rem] md:flex md:py-[4.8rem] px-[2rem]">
@@ -105,9 +105,9 @@ export const Footer = () => {
         </div>
 
         {/* Mobile Version */}
-        <div className="flex justify-between md:hidden mr-11">
+        <div className="flex justify-between md:hidden mr-5">
           <div className="mt-12 md:mt-0">
-            <h3 className="text-12 lg:text-20 font-semibold text-yellow-default">
+            <h3 className="text-16 lg:text-20 font-semibold text-yellow-default">
               Technology
             </h3>
             <ul role="list" className="mt-3 space-y-2">
@@ -115,7 +115,7 @@ export const Footer = () => {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-10 lg:text-15 text-tw-white hover:text-gray-900"
+                    className="text-12 lg:text-15 text-tw-white hover:text-gray-900"
                   >
                     {item.name}
                   </a>
@@ -124,7 +124,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="mt-12 md:mt-0">
-            <h3 className="text-12 lg:text-20 font-semibold text-yellow-default tracking-wider">
+            <h3 className="text-16 lg:text-20 font-semibold text-yellow-default tracking-wider">
               Community
             </h3>
             <ul role="list" className="mt-3 space-y-2">
@@ -132,7 +132,7 @@ export const Footer = () => {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-10 lg:text-15 text-tw-white hover:text-gray-900"
+                    className="text-12 lg:text-15 text-tw-white hover:text-gray-900"
                   >
                     {item.name}
                   </a>
@@ -143,7 +143,7 @@ export const Footer = () => {
         </div>
         <div className="flex justify-between md:hidden">
           <div className="mt-12 md:mt-0">
-            <h3 className="text-12 lg:text-20 font-semibold text-yellow-default tracking-wider">
+            <h3 className="text-16 lg:text-20 font-semibold text-yellow-default tracking-wider">
               More
             </h3>
             <ul role="list" className="mt-3 space-y-2">
@@ -151,7 +151,7 @@ export const Footer = () => {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-10 lg:text-15 text-tw-white hover:text-gray-900"
+                    className="text-12 lg:text-15 text-tw-white hover:text-gray-900"
                   >
                     {item.name}
                   </a>
@@ -172,7 +172,7 @@ export const Footer = () => {
                 </div>
               </a>
             </Link>
-            <Link href="https://discord.com/invite/D43YEygt">
+            <Link href="https://discord.com/invite/AZUrXKGq8t">
               <a target="_blank">
                 <div className="mr-[1.1rem]">
                   <Image

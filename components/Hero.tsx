@@ -60,7 +60,7 @@ export const Hero = () => {
   }
 
   return (
-    <div className="relative overflow-hidden max-w-[1000px] mx-[2rem] lg:mx-auto">
+    <div className="relative overflow-hidden max-w-[1050px] mx-[2rem] lg:mx-auto">
       <div className="w-full">
         <div
           id="down"

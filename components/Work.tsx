@@ -37,14 +37,14 @@ export const Work = () => {
         <h1 className="mb-[1.6rem] md:mb-[4.2rem] text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-[3.75]">
           How it works
         </h1>
-        <div className=" bg-tw-white max-w-[1000px] lg:rounded-2xl lg:mx-auto">
+        <div className=" bg-tw-white max-w-[1050px] lg:rounded-2xl lg:mx-auto">
           {/* 01 Liquid Staking */}
           <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 md:flex">
             <div className="animate-fadeInLtoR w-1/2 md:w-[450px] mx-auto pt-[4.5rem] pb-6">
               <Image
                 id="left"
                 priority
-                className="rounded-xl"
+                className="rounded-lg"
                 src="/assets/icon1.gif"
                 width={400}
                 height={400}
@@ -54,7 +54,7 @@ export const Work = () => {
               <div className="md:ml-20 xl:ml-32">
                 <div className="flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-md">
-                    <p className="text-blue-default font-bold mr-1 text-16 md:ml-1 md:text-22 lg:text-26 2xl:ml-2 2xl:text-28">
+                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26 2xl:text-28">
                       01
                     </p>
                   </span>
@@ -93,14 +93,14 @@ export const Work = () => {
               >
                 <div className="md:mr-20 flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-md">
-                    <p className="text-blue-default font-bold text-16 md:ml-1 md:text-22 lg:text-26 2xl:ml-2 2xl:text-28">
+                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26 2xl:text-28">
                       02
                     </p>
                   </span>
                   <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28 2xl:text-30 3xl:text-36">
                     Staked Swap
                   </h2>
-                  <ul className="list-disc font-normal mt-3 ml-4 sm:ml-7">
+                  <ul className="text-left list-disc font-normal mt-3 ml-4 sm:ml-7">
                     <WorksLi>
                       Swap your shadow tokens with our novel AMM
                     </WorksLi>
@@ -122,7 +122,7 @@ export const Work = () => {
                 <Image
                   id="right"
                   priority
-                  className="rounded-xl"
+                  className="rounded-lg"
                   src="/assets/icon2.gif"
                   width={400}
                   height={400}
@@ -137,7 +137,7 @@ export const Work = () => {
               <Image
                 id="left"
                 priority
-                className="rounded-xl"
+                className="rounded-lg"
                 src="/assets/icon3.gif"
                 width={400}
                 height={400}
@@ -147,7 +147,7 @@ export const Work = () => {
               <div className="md:ml-20 xl:ml-32">
                 <div className="flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-mdr">
-                    <p className="text-blue-default font-bold text-16 md:ml-1 md:text-22 lg:text-26 2xl:ml-2 2xl:text-28">
+                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26 2xl:text-28">
                       03
                     </p>
                   </span>
