@@ -33,14 +33,14 @@ export const Work = () => {
   }, [])
   return (
     <>
-      <div className="relative z-20 overflow-hidden pt-10">
+      <div className="relative z-20 overflow-hidden pt-[7rem]">
         <h1 className="mb-[1.6rem] md:mb-[4.2rem] text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-[3.75]">
           How it works
         </h1>
         <div className=" bg-tw-white max-w-[1050px] lg:rounded-2xl lg:mx-auto">
           {/* 01 Liquid Staking */}
           <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 md:flex">
-            <div className="animate-fadeInLtoR w-1/2 md:w-[450px] mx-auto pt-[4.5rem] pb-6">
+            <div className="animate-fadeInLtoR w-1/2 md:w-[450px] mx-auto pt-[3rem] pb-6">
               <Image
                 id="left"
                 priority
@@ -50,7 +50,7 @@ export const Work = () => {
                 height={400}
               />
             </div>
-            <div id="right" className="md:pt-[4.5rem] pb-6 w-full mx-auto">
+            <div id="right" className="md:pt-[3rem] pb-6 w-full mx-auto">
               <div className="md:ml-20 xl:ml-32">
                 <div className="flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-md">

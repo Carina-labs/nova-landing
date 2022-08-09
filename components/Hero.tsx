@@ -79,7 +79,7 @@ export const Hero = () => {
                 a combination of ICA, proprietary module and IBC query.
               </span>
             </p>
-            <div className="mt-[2rem] md:mt-[4.8rem] flex justify-center md:justify-start">
+            <div className="mt-[4rem] md:mt-[6rem] flex justify-center md:justify-start">
               <div className="flex items-center">
                 <input
                   className="focus:outline-0 border-1 border-blue-default text-center text-8 rounded-xl mr-[0.7rem] md:mr-[1rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
