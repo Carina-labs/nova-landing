@@ -4,7 +4,7 @@ export const LogoIcon = () => {
   return (
     <div className="flex justify-center items-center">
       <img
-        className="block w-auto h-6 md:h-7"
+        className="block w-auto h-5 md:h-7"
         src="/assets/Logo.svg"
         alt="Logo"
       />

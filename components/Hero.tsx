@@ -1,6 +1,14 @@
+import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 export const Hero = () => {
+  const API_KEY =
+    '382e10fec5875a9d0b03c9513141cfebf28ecf7c4e598d62609b1d9b2bfe9dce03ebd8ab5dc8fce78b6b3ae87bac9e37254a1f55d79e9e3b68bca193dff87ff9'
+  const BASE_URL = 'https://api.stibee.com/v1'
+  const listId = '198670'
+  const [res, setRes] = useState()
+  const [email, setEmail] = useState('')
+  const [hide, setHide] = useState(true)
   useEffect(() => {
     const downCallback = function (entries: any) {
       entries.forEach((entry: any) => {
@@ -14,13 +22,7 @@ export const Hero = () => {
     down.forEach(function (target) {
       downObserver.observe(target)
     })
-  }, [])
-  const API_KEY =
-    '382e10fec5875a9d0b03c9513141cfebf28ecf7c4e598d62609b1d9b2bfe9dce03ebd8ab5dc8fce78b6b3ae87bac9e37254a1f55d79e9e3b68bca193dff87ff9'
-  const BASE_URL = 'https://api.stibee.com/v1'
-  const listId = '198670'
-  const [res, setRes] = useState()
-  const [email, setEmail] = useState('')
+  }, [hide])
   let option = {
     method: 'POST',
     headers: {
@@ -29,7 +31,7 @@ export const Hero = () => {
     },
     body: JSON.stringify({
       eventOccuredBy: 'MANUAL',
-      confirmEmailYN: 'N',
+      confirmEmailYN: 'Y',
       subscribers: [
         {
           email: email,
@@ -45,18 +47,16 @@ export const Hero = () => {
         await fetch(`${BASE_URL}/lists/${listId}/subscribers`, option)
       ).json()
       setRes(data)
-      alert('Thanks for your following!')
     } catch (err) {
       console.log(err)
     }
-    setEmail('')
+    setHide(false)
   }
   console.log(res)
 
   const onChangeEmail = (e: any) => {
     const email = e.target.value
     setEmail(email)
-    console.log(email)
   }
 
   return (
@@ -81,21 +81,44 @@ export const Hero = () => {
             </p>
             <div className="mt-[4rem] md:mt-[6rem] flex justify-center md:justify-start">
               <div className="flex items-center">
-                <input
-                  className="focus:outline-0 border-1 border-blue-default text-center text-8 rounded-xl mr-[0.7rem] md:mr-[1rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
-                  type="email"
-                  placeholder="Follow for updates @your.mail"
-                  value={email}
-                  onChange={onChangeEmail}
-                />
-                <div className="bg-blue-default hover:bg-purple rounded-xl">
-                  <button
-                    onClick={handleSubscribe}
-                    className="h-[1.8rem] w-[4rem] md:h-[3.3rem] md:w-[9rem] text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10"
-                  >
-                    Submit
-                  </button>
-                </div>
+                {hide ? (
+                  <form className="flex">
+                    <input
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      className="placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 text-center text-8 rounded-lg my-[0.1rem] mx-[0.5rem] md:mx-[0.7rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
+                      placeholder="Follow for updates @your.mail"
+                      value={email}
+                      onChange={onChangeEmail}
+                    />
+                    <div className="bg-blue-default hover:bg-purple rounded-lg">
+                      <button
+                        type="submit"
+                        onClick={() => handleSubscribe}
+                        className="h-[1.8rem] w-[4rem] md:h-[3.3rem] md:w-[9rem] text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                ) : (
+                  <>
+                    <div className="bg-blue-default rounded-lg">
+                      <p className="text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10">
+                        Thanks for your following 🎉
+                      </p>
+                    </div>
+                    <div className="mt-1 mr-[1.7rem]">
+                      <Image
+                        alt="twitter"
+                        width={25}
+                        height={25}
+                        src="/assets/twitter.svg"
+                      />
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </main>
