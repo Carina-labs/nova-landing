@@ -40,25 +40,25 @@ export const Work = () => {
         <div className=" bg-tw-white max-w-[1050px] lg:rounded-2xl lg:mx-auto">
           {/* 01 Liquid Staking */}
           <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 md:flex">
-            <div className="animate-fadeInLtoR w-1/2 md:w-[450px] mx-auto pt-[3rem] pb-6">
+            <div className="animate-fadeInLtoR w-1/2 lg:w-[580px] mx-auto pt-[3rem] pb-6">
               <Image
                 id="left"
                 priority
                 className="rounded-lg"
                 src="/assets/icon1.gif"
-                width={400}
-                height={400}
+                width={450}
+                height={450}
               />
             </div>
             <div id="right" className="md:pt-[3rem] pb-6 w-full mx-auto">
               <div className="md:ml-20 xl:ml-32">
                 <div className="flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-md">
-                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26 2xl:text-28">
+                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26">
                       01
                     </p>
                   </span>
-                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28 2xl:text-30 3xl:text-36">
+                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28">
                     Liquid Staking
                   </h2>
                 </div>
@@ -93,11 +93,11 @@ export const Work = () => {
               >
                 <div className="md:mr-20 flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-md">
-                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26 2xl:text-28">
+                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26">
                       02
                     </p>
                   </span>
-                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28 2xl:text-30 3xl:text-36">
+                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28">
                     Staked Swap
                   </h2>
                   <ul className="text-left list-disc font-normal mt-3 ml-4 sm:ml-7">
@@ -118,14 +118,14 @@ export const Work = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-[450px] text-center pb-6 mx-auto pt-10 sm:pt-24 lg:py-24">
+              <div className="w-1/2 lg:w-[580px] text-center pb-6 mx-auto pt-10 sm:pt-24 lg:py-24">
                 <Image
                   id="right"
                   priority
                   className="rounded-lg"
                   src="/assets/icon2.gif"
-                  width={400}
-                  height={400}
+                  width={450}
+                  height={450}
                 />
               </div>
             </div>
@@ -133,25 +133,25 @@ export const Work = () => {
 
           {/* 03 Governance */}
           <div className="block w-full mx-auto px-6 pb-6 md:pb-22 md:px-16 md:mt-12 md:flex">
-            <div className="w-1/2 lg:w-[450px] text-center mx-auto py-6">
+            <div className="w-1/2 lg:w-[580px] text-center mx-auto py-6">
               <Image
                 id="left"
                 priority
                 className="rounded-lg"
                 src="/assets/icon3.gif"
-                width={400}
-                height={400}
+                width={450}
+                height={450}
               />
             </div>
             <div id="right" className="pb-6 sm:py-6 w-full mx-auto">
               <div className="md:ml-20 xl:ml-32">
                 <div className="flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-mdr">
-                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26 2xl:text-28">
+                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26">
                       03
                     </p>
                   </span>
-                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28 2xl:text-30 3xl:text-36">
+                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28">
                     Governance
                   </h2>
                 </div>

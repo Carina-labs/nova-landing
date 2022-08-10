@@ -109,14 +109,6 @@ export const Hero = () => {
                         Thanks for your following 🎉
                       </p>
                     </div>
-                    <div className="mt-1 mr-[1.7rem]">
-                      <Image
-                        alt="twitter"
-                        width={25}
-                        height={25}
-                        src="/assets/twitter.svg"
-                      />
-                    </div>
                   </>
                 )}
               </div>
