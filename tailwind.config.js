@@ -104,6 +104,7 @@ module.exports = {
       },
       black: '#000000',
       white: '#FFFFFF',
+      red: '#DD3333',
     },
     keyframes: {
       fadeInLtoR: {
@@ -165,8 +166,5 @@ module.exports = {
       },
     },
   },
-  // variants: {
-  //   fill: ['hover', 'focus'],
-  // },
   plugins: [],
 }

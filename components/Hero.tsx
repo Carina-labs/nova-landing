@@ -1,28 +1,16 @@
-import Image from 'next/image'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { removeWhitespace, validateEmail } from 'utils/util'
 
 export const Hero = () => {
   const API_KEY =
     '382e10fec5875a9d0b03c9513141cfebf28ecf7c4e598d62609b1d9b2bfe9dce03ebd8ab5dc8fce78b6b3ae87bac9e37254a1f55d79e9e3b68bca193dff87ff9'
   const BASE_URL = 'https://api.stibee.com/v1'
   const listId = '198670'
-  const [res, setRes] = useState()
   const [email, setEmail] = useState('')
   const [hide, setHide] = useState(true)
-  useEffect(() => {
-    const downCallback = function (entries: any) {
-      entries.forEach((entry: any) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fadeInDtoU')
-        }
-      })
-    }
-    const downObserver = new IntersectionObserver(downCallback)
-    const down = document.querySelectorAll('#down')
-    down.forEach(function (target) {
-      downObserver.observe(target)
-    })
-  }, [hide])
+  const [errorMsg, setErrorMessage] = useState('')
+  const [disabled, setDisabled] = useState(false)
+
   let option = {
     method: 'POST',
     headers: {
@@ -40,26 +28,27 @@ export const Hero = () => {
       ],
     }),
   }
-  console.log(option)
-
-  console.log(res)
-  const handleSubscribe = useCallback(async () => {
+  const handleSubscribe = async () => {
     try {
       const res = await fetch(`${BASE_URL}/lists/${listId}/subscribers`, option)
       const data = res.json()
-      setRes(await data)
+      console.log(data)
+      setHide(false)
     } catch (err) {
       console.log(err)
     }
-    setHide(false)
-  }, [email])
-
+  }
   const onChangeEmail = (e: any) => {
     const email = e.target.value
-    setEmail(email)
+    const changedEmail = removeWhitespace(email)
+    setEmail(changedEmail)
+    setErrorMessage(
+      validateEmail(changedEmail) ? '' : 'Please verify your email',
+    )
   }
-
-  const success = hide ? null : <h1 className="text-white">hi</h1>
+  useEffect(() => {
+    setDisabled(!(email && !errorMsg))
+  }, [email, errorMsg])
 
   return (
     <div className="relative overflow-hidden max-w-[1050px] mx-[2rem] lg:mx-auto">
@@ -84,35 +73,50 @@ export const Hero = () => {
             <div className="mt-[4rem] md:mt-[6rem] flex justify-center md:justify-start">
               <div className="flex items-center">
                 {hide ? (
-                  <form className="flex">
-                    <input
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      className="placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 text-center text-8 rounded-lg my-[0.1rem] mx-[0.5rem] md:mx-[0.7rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
-                      placeholder="Follow for updates @your.mail"
-                      value={email}
-                      onChange={onChangeEmail}
-                    />
-                    <div className="h-full bg-blue-default hover:bg-purple rounded-lg">
-                      <button
-                        type="submit"
-                        onClick={() => handleSubscribe}
-                        className="h-[1.8rem] w-[4rem] md:h-[3.3rem] md:w-[9rem] text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10"
-                      >
-                        Submit
-                      </button>
+                  <div>
+                    <div className="flex">
+                      <input
+                        name="email"
+                        type="email"
+                        autoComplete="email"
+                        className="text-center text-8 rounded-lg my-[0.1rem] mx-[0.5rem] md:mx-[0.7rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
+                        placeholder="Follow for updates your email"
+                        value={email}
+                        onChange={onChangeEmail}
+                      />
+                      {disabled ? (
+                        <div className="h-full bg-blue-default rounded-lg">
+                          <button
+                            disabled
+                            type="submit"
+                            onClick={handleSubscribe}
+                            className="h-[1.8rem] w-[4rem] md:h-[3.3rem] md:w-[9rem] opacity-30 text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      ) : (
+                        <div className="h-full bg-blue-default hover:bg-purple rounded-lg">
+                          <button
+                            type="submit"
+                            onClick={handleSubscribe}
+                            className="h-[1.8rem] w-[4rem] md:h-[3.3rem] md:w-[9rem] text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      )}
                     </div>
-                  </form>
+                    <div className="text-left text-8 md:text-16 text-red font-bold ml-3 mt-1 md:ml-4 md:mt-2">
+                      {errorMsg}
+                    </div>
+                  </div>
                 ) : (
-                  <>
-                    {success}
-                    <div className="bg-blue-default rounded-lg">
-                      <p className="text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10">
-                        Thanks for your following 🎉
-                      </p>
-                    </div>
-                  </>
+                  <div className="bg-blue-default rounded-lg">
+                    <p className="text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10">
+                      Thanks for your following 👍🏼
+                    </p>
+                  </div>
                 )}
               </div>
             </div>
