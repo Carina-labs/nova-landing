@@ -211,8 +211,8 @@ export const Footer = () => {
 
 const navigation = {
   technology: [
-    { name: 'Documentation', href: '#' },
-    { name: 'Github - Soon', href: '#' },
+    { name: 'Documentation', href: 'https://bit.ly/3QgueN0' },
+    { name: 'Github - Soon', href: '/' },
   ],
   community: [
     { name: 'Twitter', href: 'https://twitter.com/Supernovazone' },
@@ -221,6 +221,6 @@ const navigation = {
   about: [
     { name: 'Contact us', href: 'https://twitter.com/Supernovazone' },
     { name: 'Medium', href: 'https://medium.com/supernovazone' },
-    { name: 'F&Q - Soon', href: '#' },
+    { name: 'F&Q - Soon', href: '/' },
   ],
 }
