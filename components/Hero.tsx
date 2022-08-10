@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 export const Hero = () => {
   const API_KEY =
@@ -41,23 +41,25 @@ export const Hero = () => {
     }),
   }
   console.log(option)
-  const handleSubscribe = async () => {
+
+  console.log(res)
+  const handleSubscribe = useCallback(async () => {
     try {
-      const data = await (
-        await fetch(`${BASE_URL}/lists/${listId}/subscribers`, option)
-      ).json()
-      setRes(data)
+      const res = await fetch(`${BASE_URL}/lists/${listId}/subscribers`, option)
+      const data = res.json()
+      setRes(await data)
     } catch (err) {
       console.log(err)
     }
     setHide(false)
-  }
-  console.log(res)
+  }, [email])
 
   const onChangeEmail = (e: any) => {
     const email = e.target.value
     setEmail(email)
   }
+
+  const success = hide ? null : <h1 className="text-white">hi</h1>
 
   return (
     <div className="relative overflow-hidden max-w-[1050px] mx-[2rem] lg:mx-auto">
@@ -92,7 +94,7 @@ export const Hero = () => {
                       value={email}
                       onChange={onChangeEmail}
                     />
-                    <div className="bg-blue-default hover:bg-purple rounded-lg">
+                    <div className="h-full bg-blue-default hover:bg-purple rounded-lg">
                       <button
                         type="submit"
                         onClick={() => handleSubscribe}
@@ -104,6 +106,7 @@ export const Hero = () => {
                   </form>
                 ) : (
                   <>
+                    {success}
                     <div className="bg-blue-default rounded-lg">
                       <p className="text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10">
                         Thanks for your following 🎉

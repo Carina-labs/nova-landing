@@ -1,22 +1,9 @@
 import { Disclosure } from '@headlessui/react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { LogoIcon } from './icons/LogoIcon'
 
-const navigation = [
-  { name: 'Documents', href: '#', current: true },
-  { name: 'Twitter', href: 'https://twitter.com/Supernovazone', current: true },
-  {
-    name: 'Discord',
-    href: 'https://discord.com/invite/AZUrXKGq8t',
-    current: false,
-  },
-  { name: 'Medium', href: 'https://medium.com/supernovazone', current: false },
-]
-
 export const Header = () => {
-  const [hide, setHide] = useState(true)
   return (
     <Disclosure as="nav" className="w-full relative z-20 bg-tw-black">
       <div className="max-w-[1050px] mx-[1.3rem] lg:mx-auto">
@@ -27,19 +14,20 @@ export const Header = () => {
 
           <div className="flex">
             <Link href="/">
-              <a target="_blank" className="mb-[0.5rem] mr-[1.7rem]">
-                <p className="text-white hover:text-yellow-default text-22">
+              <a
+                target="_blank"
+                className=" md:mb-[0.5rem] mr-2 md:mr-[1.7rem]"
+              >
+                <p className="mt-[0.2rem] md:mt-1 text-white hover:text-yellow-default text-13 md:text-22">
                   Docs
                 </p>
               </a>
             </Link>
             <Link href="https://twitter.com/Supernovazone">
               <a target="_blank">
-                <div className="mt-2 mr-[1.7rem]">
+                <div className="mt-[0.35rem] md:mt-2 mr-2 md:mr-[1.7rem]">
                   <svg
-                    className="fill-white hover:fill-yellow-default"
-                    width="25"
-                    height="20"
+                    className="w-4 h-4 md:w-6 md:h-6 fill-white hover:fill-yellow-default"
                     viewBox="0 0 25 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -50,11 +38,9 @@ export const Header = () => {
             </Link>
             <Link href="https://discord.com/invite/AZUrXKGq8t">
               <a target="_blank">
-                <div className="mt-2 mr-[1.7rem]">
+                <div className="mt-[0.35rem] md:mt-2 mr-2 md:mr-[1.7rem]">
                   <svg
-                    className="fill-white hover:fill-yellow-default"
-                    width="28"
-                    height="20"
+                    className="w-4 h-4 md:w-6 md:h-6 fill-white hover:fill-yellow-default"
                     viewBox="0 0 28 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -65,11 +51,9 @@ export const Header = () => {
             </Link>
             <Link href="https://medium.com/supernovazone">
               <a target="_blank">
-                <div className="mt-2 mr-[1.7rem]">
+                <div className="mt-[0.35rem] md:mt-2 md:mr-[1.7rem]">
                   <svg
-                    className="fill-white hover:fill-yellow-default"
-                    width="23"
-                    height="18"
+                    className="w-4 h-4 md:w-6 md:h-6 fill-white hover:fill-yellow-default"
                     viewBox="0 0 23 18"
                     xmlns="http://www.w3.org/2000/svg"
                   >
