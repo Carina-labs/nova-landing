@@ -19,7 +19,7 @@ export const Header = () => {
                 className=" md:mb-[0.5rem] mr-2 md:mr-[1.7rem]"
               >
                 <p className="mt-[0.2rem] md:mt-1 text-white hover:text-yellow-default text-13 md:text-22">
-                  Docs
+                  Docs-soon
                 </p>
               </a>
             </Link>

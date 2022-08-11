@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { LogoIcon } from './icons/LogoIcon'
@@ -26,7 +25,6 @@ export const Footer = () => {
                 </div>
               </a>
             </Link>
-
             <Link href="https://discord.com/invite/D43YEygt">
               <a target="_blank">
                 <div className="mr-[1.1rem]">
@@ -211,7 +209,7 @@ export const Footer = () => {
 
 const navigation = {
   technology: [
-    { name: 'Documentation', href: 'https://bit.ly/3QgueN0' },
+    { name: 'Documentation - soon', href: 'https://bit.ly/3QgueN0' },
     { name: 'Github - Soon', href: '/' },
   ],
   community: [
