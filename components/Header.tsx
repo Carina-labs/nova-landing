@@ -13,7 +13,7 @@ export const Header = () => {
           </div>
 
           <div className="flex">
-            <Link href="https://bit.ly/3QgueN0">
+            <Link href="/">
               <a
                 target="_blank"
                 className=" md:mb-[0.5rem] mr-2 md:mr-[1.7rem]"

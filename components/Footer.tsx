@@ -209,7 +209,7 @@ export const Footer = () => {
 
 const navigation = {
   technology: [
-    { name: 'Documentation - soon', href: 'https://bit.ly/3QgueN0' },
+    { name: 'Documentation - soon', href: '/' },
     { name: 'Github - Soon', href: '/' },
   ],
   community: [
