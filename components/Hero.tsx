@@ -58,7 +58,7 @@ export const Hero = () => {
           className="relative text-center md:text-left flex justify-start md:pb-20 lg:pb-28"
         >
           <main className="mt-[3.6rem] md:mt-[12.5rem] w-full">
-            <h1 className="font-bold text-24 md:leading-20 md:text-64 lg:text-left xl:leading-22 xl:text-70 2xl:leading-24 2xl:text-90">
+            <h1 className="font-bold text-[2rem] md:leading-20 md:text-64 lg:text-left xl:leading-22 xl:text-70 2xl:leading-24 2xl:text-90">
               <span className="text-tw-white block">Ultimate platform </span>
               <span className="text-tw-white block">for staked assets</span>
             </h1>
@@ -112,9 +112,9 @@ export const Hero = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="bg-blue-default rounded-lg">
-                    <p className="text-tw-white flex items-center justify-center font-bold py-2 px-3 text-8 md:py-3 md:text-20 md:px-5">
-                      Check your email to confirm subscription
+                  <div className="border-[#3838F4] border-2 bg-tw-white rounded-lg">
+                    <p className="flex items-center justify-center font-bold py-2 px-4 text-10 md:py-3 md:text-20 md:px-5">
+                      Check your email to confirm subscription 👍🏼
                     </p>
                   </div>
                 )}

@@ -7,21 +7,18 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 export const Header = () => {
   const [hide, setHide] = useState(true)
   const navigation = [
-    { name: 'Documents', href: '#', current: true },
+    { name: 'Doc-Soon', href: '/' },
     {
       name: 'Twitter',
       href: 'https://twitter.com/Supernovazone',
-      current: true,
     },
     {
       name: 'Discord',
       href: 'https://discord.com/invite/AZUrXKGq8t',
-      current: false,
     },
     {
       name: 'Medium',
       href: 'https://medium.com/supernovazone',
-      current: false,
     },
   ]
 
@@ -86,7 +83,7 @@ export const Header = () => {
                 </Link>
               </div>
               {/* Mobile menu button*/}
-              <Disclosure.Button className="inline-flex items-center justify-center rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <Disclosure.Button className="md:hidden inline-flex items-center justify-center rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 {open ? (
                   <XIcon
                     onClick={() => setHide(true)}
@@ -103,7 +100,7 @@ export const Header = () => {
               </Disclosure.Button>
             </div>
             {hide ? null : (
-              <div className="absolute top-12 bottom-0 -right-[21px] items-center justify-center md:hidden">
+              <div className="absolute top-12 bottom-0 right-[0] items-center justify-center md:hidden">
                 {navigation.map((item) => (
                   <div className="flex-col bg-tw-black px-3 py-2 text-sm font-medium">
                     <Link href={item.href}>
