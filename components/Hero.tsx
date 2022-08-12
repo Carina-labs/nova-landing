@@ -112,8 +112,8 @@ export const Hero = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="border-[#3838F4] border-2 bg-tw-white rounded-lg">
-                    <p className="flex items-center justify-center font-bold py-2 px-4 text-10 md:py-3 md:text-20 md:px-5">
+                  <div className="border-[#3838F4] border-3 bg-gradient-to-r from-[#E6FF67] to-[#fff] rounded-[8px] md:rounded-[15px]">
+                    <p className="flex items-center justify-center font-bold py-2 px-4 text-10 md:py-3 md:text-20 md:px-6">
                       Check your email to confirm subscription 👍🏼
                     </p>
                   </div>
