@@ -58,8 +58,8 @@ export const Hero = () => {
           className="relative text-center md:text-left flex justify-start md:pb-20 lg:pb-28"
         >
           <main className="mt-[3.6rem] md:mt-[12.5rem] w-full">
-            <h1 className="font-bold text-24 md:leading-20 md:text-64 lg:text-left xl:leading-22 xl:text-70 2xl:leading-24 2xl:text-90">
-              <span className="text-tw-white block">Ultimate money lego </span>
+            <h1 className="font-bold text-[2rem] md:leading-20 md:text-64 lg:text-left xl:leading-22 xl:text-70 2xl:leading-24 2xl:text-90">
+              <span className="text-tw-white block">Ultimate platform </span>
               <span className="text-tw-white block">for staked assets</span>
             </h1>
             <p className="text-tw-white mt-[1rem] md:mt-[2.4rem] text-8 md:text-20 lg:text-left xl:text-23 2xl:leading-12 2xl:text-26">
@@ -79,13 +79,13 @@ export const Hero = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="text-center text-8 rounded-lg my-[0.1rem] mx-[0.5rem] md:mx-[0.7rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
-                        placeholder="Follow for updates your email"
+                        className="text-center text-8 rounded-lg my-[0.1rem] ml-[0.2rem] mr-[0.5rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
+                        placeholder="Submit email for subscription"
                         value={email}
                         onChange={onChangeEmail}
                       />
                       {disabled ? (
-                        <div className="h-full bg-blue-default rounded-lg">
+                        <div className="h-full bg-blue-default rounded-lg mt-[0.1rem]">
                           <button
                             disabled
                             type="submit"
@@ -112,9 +112,9 @@ export const Hero = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="bg-blue-default rounded-lg">
-                    <p className="text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10">
-                      Thanks for your following 👍🏼
+                  <div className="border-[#3838F4] border-3 bg-gradient-to-r from-[#E6FF67] to-[#fff] rounded-[8px] md:rounded-[15px]">
+                    <p className="flex items-center justify-center font-bold py-2 px-4 text-10 md:py-3 md:text-20 md:px-6">
+                      Check your email to confirm subscription 👍🏼
                     </p>
                   </div>
                 )}
