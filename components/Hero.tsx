@@ -113,8 +113,8 @@ export const Hero = () => {
                   </div>
                 ) : (
                   <div className="bg-blue-default rounded-lg">
-                    <p className="text-tw-white flex items-center justify-center font-bold py-2 px-5 text-8 md:py-3 md:text-20 md:px-10">
-                      Thanks for your following 👍🏼
+                    <p className="text-tw-white flex items-center justify-center font-bold py-2 px-3 text-8 md:py-3 md:text-20 md:px-5">
+                      Check your email to confirm subscription
                     </p>
                   </div>
                 )}
