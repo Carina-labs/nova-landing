@@ -49,8 +49,7 @@ export const Ecosystem = () => {
                 OSMO
               </dt>
               <dd className="mt-1 text-left font-medium text-black text-10 xl:text-14">
-                A cross-chain automated market maker(AMM) protocol built using
-                the Cosmos SDK.
+                A cross-chain automated market maker(AMM) with the Cosmos SDK.
               </dd>
             </div>
           </div>

@@ -79,13 +79,13 @@ export const Hero = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="text-center text-8 rounded-lg my-[0.1rem] mx-[0.5rem] md:mx-[0.7rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
+                        className="text-center text-8 rounded-lg my-[0.1rem] ml-[0.2rem] mr-[0.5rem] px-[1rem] w-[12rem] h-[1.8rem] md:text-16 md:h-[3.3rem] md:w-[23rem]"
                         placeholder="Submit email for subscription"
                         value={email}
                         onChange={onChangeEmail}
                       />
                       {disabled ? (
-                        <div className="h-full bg-blue-default rounded-lg">
+                        <div className="h-full bg-blue-default rounded-lg mt-[0.1rem]">
                           <button
                             disabled
                             type="submit"
