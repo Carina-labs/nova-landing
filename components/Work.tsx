@@ -69,15 +69,14 @@ export const Work = () => {
                     staking!
                   </WorksLi>
                   <WorksLi>
-                    SnAssets also auto-compound your staking reward to make the
-                    best yield
+                    snAssets also auto-compound your staking reward and provide
+                    the best yield
                   </WorksLi>
                   <WorksLi>
                     You can redeem your assets by burning snAssets
                   </WorksLi>
                   <WorksLi>
-                    We are rapidly building something to make snAssets’ own
-                    utility!
+                    We shall bring more updates to add utility to the snAssets!
                   </WorksLi>
                 </ul>
               </div>
@@ -102,18 +101,16 @@ export const Work = () => {
                   </h2>
                   <ul className="text-left list-disc font-normal mt-3 ml-4 sm:ml-7">
                     <WorksLi>
-                      Swap your shadow tokens with our novel AMM
+                      Swap your shadow tokens through our novel AMM
                     </WorksLi>
                     <WorksLi>
-                      SnAssets also auto-compound your staking reward to make
-                      the best yield
+                      The pricing of staked assets has been arbitrary until now
+                      on other protocols
                     </WorksLi>
                     <WorksLi>
-                      Staked assets’ pricing is arbitrary so far now
-                    </WorksLi>
-                    <WorksLi>
-                      Supernova’s staked swap suggests decent price for various
-                      financial positions
+                      Supernova’s staked swap will take various factors like
+                      unbonding period and interest rate to provide the best
+                      swap experience
                     </WorksLi>
                   </ul>
                 </div>
@@ -157,15 +154,12 @@ export const Work = () => {
                 </div>
                 <ul className="list-disc font-normal mt-3 ml-4 sm:ml-7">
                   <WorksLi>
-                    Vote with NOVA and influence to all app-chains by our own
-                    validator
+                    Vote with NOVA and participate in governance on all
+                    app-chains through Supernova validator
                   </WorksLi>
                   <WorksLi>
-                    NOVA if-self could be a governance hub on Cosmos
-                  </WorksLi>
-                  <WorksLi>
-                    All supported chain’s governance can be voted by NOVA own
-                    governance
+                    NOVA will become the linchpin of the governance on Cosmos
+                    ecosystem
                   </WorksLi>
                 </ul>
               </div>
