@@ -96,7 +96,7 @@ export const Hero = () => {
                           </button>
                         </div>
                       ) : (
-                        <div className="h-full bg-blue-default hover:bg-purple rounded-lg">
+                        <div className="h-full bg-blue-default hover:bg-purple rounded-lg mt-[0.1rem]">
                           <button
                             type="submit"
                             onClick={handleSubscribe}
