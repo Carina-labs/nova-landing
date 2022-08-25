@@ -14,7 +14,7 @@ export const Header = () => {
     },
     {
       name: 'Discord',
-      href: 'https://discord.com/invite/AZUrXKGq8t',
+      href: 'https://discord.gg/2gj8fScWqD',
     },
     {
       name: 'Medium',
@@ -55,7 +55,7 @@ export const Header = () => {
                     </div>
                   </a>
                 </Link>
-                <Link href="https://discord.com/invite/AZUrXKGq8t">
+                <Link href="https://discord.gg/2gj8fScWqD">
                   <a target="_blank">
                     <div className="mt-[0.35rem] md:mt-2 mr-2 md:mr-[1.7rem]">
                       <svg

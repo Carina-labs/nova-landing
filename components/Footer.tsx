@@ -25,7 +25,7 @@ export const Footer = () => {
                 </div>
               </a>
             </Link>
-            <Link href="https://discord.com/invite/D43YEygt">
+            <Link href="https://discord.gg/2gj8fScWqD">
               <a target="_blank">
                 <div className="mr-[1.1rem]">
                   <svg
