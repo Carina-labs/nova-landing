@@ -3,3 +3,4 @@ out
 yarn.lock
 .next
 .env
+.DS_Store
