@@ -51,7 +51,7 @@ export const Hero = () => {
   }, [email, errorMsg])
 
   return (
-    <div className="relative overflow-hidden max-w-[1050px] mx-[2rem] lg:mx-auto">
+    <div className="relative overflow-hidden max-w-[780px] lg:max-w-[1050px] mx-[2rem] md:mx-auto">
       <div className="w-full">
         <div
           id="down"
@@ -114,7 +114,7 @@ export const Hero = () => {
                 ) : (
                   <div className="border-[#3838F4] border-3 bg-gradient-to-r from-[#E6FF67] to-[#fff] rounded-[8px] md:rounded-[15px]">
                     <p className="flex items-center justify-center font-bold py-2 px-4 text-10 md:py-3 md:text-20 md:px-6">
-                      Check your email to confirm subscription 👍🏼
+                      Thanks to your subscription 👍🏼
                     </p>
                   </div>
                 )}

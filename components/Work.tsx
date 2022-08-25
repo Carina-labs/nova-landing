@@ -37,10 +37,10 @@ export const Work = () => {
         <h1 className="mb-[1.6rem] md:mb-[4.2rem] text-tw-white font-extrabold text-center text-24 md:text-32 lg:text-40 xl:text-[3.75]">
           How it works
         </h1>
-        <div className=" bg-tw-white max-w-[1050px] lg:rounded-2xl lg:mx-auto">
+        <div className="border-2 border-yellow-default bg-tw-white max-w-[780px] lg:max-w-[1050px] rounded-xl md:rounded-2xl mx-[1.3rem] md:mx-auto">
           {/* 01 Liquid Staking */}
-          <div className="block w-full mx-auto px-6 md:px-16 md:mt-12 md:flex">
-            <div className="animate-fadeInLtoR w-1/2 lg:w-[580px] mx-auto pt-[3rem] pb-6">
+          <div className="block w-full mx-auto px-6 md:px-16 md:flex">
+            <div className="animate-fadeInLtoR w-1/2 mx-auto pt-[3rem] pb-6">
               <Image
                 id="left"
                 priority
@@ -54,11 +54,11 @@ export const Work = () => {
               <div className="md:ml-20 xl:ml-32">
                 <div className="flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-md">
-                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26">
+                    <p className="text-blue-default font-bold text-16 md:text-24">
                       01
                     </p>
                   </span>
-                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28">
+                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-26">
                     Liquid Staking
                   </h2>
                 </div>
@@ -92,11 +92,11 @@ export const Work = () => {
               >
                 <div className="md:mr-20 flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-md">
-                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26">
+                    <p className="text-blue-default font-bold text-16 md:text-24">
                       02
                     </p>
                   </span>
-                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28">
+                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-26">
                     Staked Swap
                   </h2>
                   <ul className="text-left list-disc font-normal mt-3 ml-4 sm:ml-7">
@@ -115,7 +115,7 @@ export const Work = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-[580px] text-center pb-6 mx-auto pt-10 sm:pt-24 lg:py-24">
+              <div className="w-1/2 text-center pb-6 mx-auto pt-10 sm:pt-24 lg:py-24">
                 <Image
                   id="right"
                   priority
@@ -130,7 +130,7 @@ export const Work = () => {
 
           {/* 03 Governance */}
           <div className="block w-full mx-auto px-6 pb-6 md:pb-22 md:px-16 md:mt-12 md:flex">
-            <div className="w-1/2 lg:w-[580px] text-center mx-auto py-6">
+            <div className="w-1/2 text-center mx-auto py-6">
               <Image
                 id="left"
                 priority
@@ -144,11 +144,11 @@ export const Work = () => {
               <div className="md:ml-20 xl:ml-32">
                 <div className="flex-column text-center md:text-left">
                   <span className="h-6 w-6 rounded-mdr">
-                    <p className="text-blue-default font-bold text-16 md:text-22 lg:text-26">
+                    <p className="text-blue-default font-bold text-16 md:text-24">
                       03
                     </p>
                   </span>
-                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-24 lg:text-28">
+                  <h2 className="font-bold text-gray-900 mb-6 text-18 md:text-26">
                     Governance
                   </h2>
                 </div>
