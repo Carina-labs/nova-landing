@@ -19,7 +19,7 @@ export const Hero = () => {
     },
     body: JSON.stringify({
       eventOccuredBy: 'MANUAL',
-      confirmEmailYN: 'Y',
+      confirmEmailYN: 'N',
       subscribers: [
         {
           email: email,
