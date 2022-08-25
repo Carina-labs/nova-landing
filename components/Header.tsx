@@ -26,7 +26,7 @@ export const Header = () => {
     <Disclosure as="nav" className="w-full relative z-20 bg-tw-black">
       {({ open }) => (
         <>
-          <div className="max-w-[1050px] mx-[1.3rem] lg:mx-auto">
+          <div className="max-w-[780px] lg:max-w-[1050px] mx-[1.3rem] md:mx-auto">
             <div className="w-full relative flex items-center h-[50px] md:h-[4.7rem] justify-between">
               <div className=" md:mx-0 md:flex items-center">
                 <LogoIcon />
