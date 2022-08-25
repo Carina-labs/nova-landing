@@ -7,7 +7,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 export const Header = () => {
   const [hide, setHide] = useState(true)
   const navigation = [
-    { name: 'Doc-Soon', href: '/' },
+    { name: 'Docs', href: '/whitepaper.pdf' },
     {
       name: 'Twitter',
       href: 'https://twitter.com/Supernovazone',
