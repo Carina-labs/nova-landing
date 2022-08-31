@@ -219,6 +219,6 @@ const navigation = {
   about: [
     { name: 'Contact us', href: 'https://twitter.com/Supernovazone' },
     { name: 'Medium', href: 'https://medium.com/supernovazone' },
-    { name: 'F&Q - Soon', href: '/' },
+    { name: 'FAQ - Soon', href: '/' },
   ],
 }
