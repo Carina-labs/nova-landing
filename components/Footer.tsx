@@ -219,6 +219,11 @@ const navigation = {
   about: [
     { name: 'Contact us', href: 'https://twitter.com/Supernovazone' },
     { name: 'Medium', href: 'https://medium.com/supernovazone' },
-    { name: 'FAQ - Soon', href: '/' },
+
+    {
+      name: 'FAQ',
+      href: 'https://medium.com/supernovazone/frequently-asked-questions-e4669788a803',
+    },
+
   ],
 }
