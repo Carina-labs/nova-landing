@@ -43,7 +43,7 @@ export const Header = () => {
                     </p>
                   </a>
                 </Link>
-                <Link href="https://supernova-docs.vercel.app/">
+                <Link href="https://docs.supernovaprotocol.xyz/">
                   <a
                       target="_blank"
                       className=" md:mb-[0.5rem] mr-2 md:mr-[1.7rem]"
