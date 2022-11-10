@@ -7,7 +7,8 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 export const Header = () => {
   const [hide, setHide] = useState(true)
   const navigation = [
-    { name: 'Docs', href: '/whitepaper.pdf' },
+    { name: 'Whitepaper', href: '/whitepaper.pdf' },
+    { name: 'Docs', href: 'https://supernova-docs.vercel.app/' },
     {
       name: 'Twitter',
       href: 'https://twitter.com/Supernovazone',
@@ -36,6 +37,16 @@ export const Header = () => {
                   <a
                     target="_blank"
                     className=" md:mb-[0.5rem] mr-2 md:mr-[1.7rem]"
+                  >
+                    <p className="mt-[0.2rem] md:mt-1 text-white hover:text-yellow-default text-13 md:text-22">
+                      Whitepaper
+                    </p>
+                  </a>
+                </Link>
+                <Link href="https://supernova-docs.vercel.app/">
+                  <a
+                      target="_blank"
+                      className=" md:mb-[0.5rem] mr-2 md:mr-[1.7rem]"
                   >
                     <p className="mt-[0.2rem] md:mt-1 text-white hover:text-yellow-default text-13 md:text-22">
                       Docs

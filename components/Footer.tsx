@@ -209,8 +209,9 @@ export const Footer = () => {
 
 const navigation = {
   technology: [
-    { name: 'Documentation', href: '/whitepaper.pdf' },
-    { name: 'Github - Soon', href: '/' },
+    { name: 'Whitepaper', href: '/whitepaper.pdf' },
+    { name: 'Documentation', href: 'https://supernova-docs.vercel.app/' },
+    { name: 'Github - Soon', href: 'https://github.com/Carina-labs' },
   ],
   community: [
     { name: 'Twitter', href: 'https://twitter.com/Supernovazone' },
