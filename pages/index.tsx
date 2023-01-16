@@ -12,23 +12,34 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Supernova</title>
+        <meta name="title" content="Home | Supernova" />
+        <meta
+          name="description"
+          content="Ultimate platform for the staked assets"
+        />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Home | Supernova" />
         <meta
           property="og:description"
           content="Ultimate platform for the staked assets"
         />
         <meta property="og:site_name" content="Supernova" />
-        <meta property="og:image" content="public/assets/Supernova.svg" />
+        <meta
+          property="og:image"
+          content="https://www.supernovaprotocol.xyz/assets/Supernova.svg"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630"></meta>
-        <meta name="twitter:card" content="" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Home | Supernova" />
         <meta
           name="twitter:description"
           content="Ultimate platform for the staked assets"
         />
-        <meta name="twitter:image" content="public/assets/Supernova.svg" />
-        <meta name="twitter:site" content="@Supernovazone" />
+        <meta
+          name="twitter:image"
+          content="https://www.supernovaprotocol.xyz/assets/Supernova.svg"
+        />
       </Head>
       <div className="relative h-auto">
         <div className="z-[-1] h-[1795px] absolute top-[2.2rem] w-full">
