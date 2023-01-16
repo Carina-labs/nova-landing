@@ -8,6 +8,7 @@ import { Work } from 'components/Work'
 import Head from 'next/head'
 
 const Home: NextPage = () => {
+  const imgPath = `${process.env.NEXT_PUBLIC_LANDING_URL}/assets/Supernova.svg`
   return (
     <>
       <Head>
@@ -24,10 +25,7 @@ const Home: NextPage = () => {
           content="Ultimate platform for the staked assets"
         />
         <meta property="og:site_name" content="Supernova" />
-        <meta
-          property="og:image"
-          content="https://www.supernovaprotocol.xyz/assets/Supernova.svg"
-        />
+        <meta property="og:image" content={imgPath} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630"></meta>
         <meta name="twitter:card" content="summary_large_image" />
@@ -36,10 +34,7 @@ const Home: NextPage = () => {
           name="twitter:description"
           content="Ultimate platform for the staked assets"
         />
-        <meta
-          name="twitter:image"
-          content="https://www.supernovaprotocol.xyz/assets/Supernova.svg"
-        />
+        <meta name="twitter:image" content={imgPath} />
       </Head>
       <div className="relative h-auto">
         <div className="z-[-1] h-[1795px] absolute top-[2.2rem] w-full">
