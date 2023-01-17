@@ -7,7 +7,7 @@ import { Ecosystem } from 'components/Ecosystem'
 import { Work } from 'components/Work'
 import Head from 'next/head'
 
-const imgPath = `${process.env.NEXT_PUBLIC_LANDING_URL}/assets/Supernova.svg`
+const imgPath = `${process.env.NEXT_PUBLIC_DOMAIN_ADDRESS}/assets/Supernova.svg`
 const Home: NextPage = () => {
   return (
     <>
