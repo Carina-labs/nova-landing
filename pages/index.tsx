@@ -7,7 +7,7 @@ import { Ecosystem } from 'components/Ecosystem'
 import { Work } from 'components/Work'
 import Head from 'next/head'
 
-const imgPath = `${process.env.NEXT_PUBLIC_DOMAIN_ADDRESS}/assets/Supernova.svg`
+const imgPath = `${process.env.NEXT_PUBLIC_DOMAIN_ADDRESS}/assets/og.png`
 const Home: NextPage = () => {
   return (
     <>
@@ -25,8 +25,8 @@ const Home: NextPage = () => {
         />
         <meta property="og:site_name" content="Supernova" />
         <meta property="og:image" content={imgPath} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630"></meta>
+        <meta property="og:image:width" content="2401" />
+        <meta property="og:image:height" content="1261"></meta>
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div className="relative h-auto">
