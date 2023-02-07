@@ -18,7 +18,7 @@ export const Audits = () => {
   return (
     <div
       id="down"
-      className="mt-[2.6rem] md:mt-[8rem] mb-[5.4rem] md:mb-[20rem]"
+      className="overflow-hidden mt-[2.6rem] md:mt-[8rem] mb-[5.4rem] md:mb-[20rem]"
     >
       <div className="relative container mx-auto px-4">
         <div className="relative z-10 flex flex-wrap justify-center items-center">
@@ -27,7 +27,7 @@ export const Audits = () => {
           </h1>
         </div>
       </div>
-      <div className="relative flex flex-wrap bg-black justify-center md:space-x-6 md:py-16 py-8">
+      <div className="relative flex flex-wrap justify-center md:space-x-6 md:py-16 py-8">
         <div className="md:max-w-md max-w-sm md:mb-0 mb-4 md:w-1/3">
           <div className="px-8 py-7 text-center bg-white rounded-2xl border-2 border-yellow-500">
             <div className="mx-auto mb-4 border-b border-yellow-500 w-full md:py-4 py-2">
