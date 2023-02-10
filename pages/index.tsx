@@ -6,6 +6,7 @@ import { Hero } from '../components/Hero'
 import { Ecosystem } from 'components/Ecosystem'
 import { Work } from 'components/Work'
 import Head from 'next/head'
+import { Audits } from 'components/Audits'
 
 const imgPath = `${process.env.NEXT_PUBLIC_DOMAIN_ADDRESS}/assets/og.png`
 const Home: NextPage = () => {
@@ -48,6 +49,7 @@ const Home: NextPage = () => {
         <Hero />
         <Work />
         <Ecosystem />
+        <Audits />
         <Footer />
       </div>
     </>
