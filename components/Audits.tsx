@@ -41,7 +41,7 @@ export const Audits = () => {
             <a
               target="_blank"
               className="w-full mx-auto"
-              href="https://www.certik.com/company/about"
+              href="https://github.com/Carina-labs/audit-reports/blob/master/certik/REP-final-20221220T092913Z.pdf"
             >
               <p className="font-bold px-8 text-center md:px-6 text-base transform hover:scale-105 ease-in-out transition origin-bottom hover:underline ">
                 See report
@@ -63,7 +63,7 @@ export const Audits = () => {
             <a
               target="_blank"
               className="w-full mx-auto"
-              href="https://halborn.com/about/brand"
+              href="https://github.com/Carina-labs/audit-reports/tree/master/halborn"
             >
               <p className="font-bold px-8 text-center md:px-6 text-base transform hover:scale-105 ease-in-out transition origin-bottom hover:underline ">
                 See report
